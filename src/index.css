@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: 'Google Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    width: 100dvw;
+    overflow-x: hidden;
+}
+
+@layer base {
+    @font-face {
+        font-family: 'Roobert';
+        src: url('/public/fonts/Roobert-Medium.ttf');
+    }
+    @font-face {
+        font-family: 'exwaye';
+        src: url('/public/fonts/exwaye.ttf');
+    }
+    @font-face {
+        font-family: 'zentry';
+        src: url('/public/fonts/ZENTRY-Regular.ttf');
+    }
+    @font-face {
+        font-family: 'coaster';
+        src: url('/public/fonts/Coaster Simone.ttf');
+    }
+}
+
+@layer utilities {
+    .absolute-center {
+        @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%];
+    }
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+    .special-font {
+        font-family: "zentry";
+        font-feature-settings: "ss01" on;
+    }
+
+    .hero-heading {
+        @apply uppercase font-zentry text-[#DFDFF2] text-9xl sm:text-[10rem] md:text-[14rem] lg:text-[20rem];
+    }
+}
