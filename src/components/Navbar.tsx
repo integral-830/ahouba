@@ -12,7 +12,6 @@ function Navbar() {
     const menuItems: Array<MenuItem> = [
         {title: "Events", link: ""},
         {title: "Team", link: ""},
-        {title: "Sponsor", link: "#sponsorSection"},
         {title: "Developer", link: ""}
     ]
 

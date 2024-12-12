@@ -5,7 +5,7 @@ import {useGSAP} from "@gsap/react";
 
 const HorizontalScroll = () => {
     const stickySection = useRef(null);
-    const stickyHeader = useRef(null);
+    const stickyHeader = useRef<HTMLDivElement | null>(null);
     const stickyHeight = window.innerHeight * 2;
 
     useGSAP(() => {
@@ -18,7 +18,7 @@ const HorizontalScroll = () => {
                 pinSpacing: true,
                 onUpdate: (self) => {
                     const progress = self.progress;
-                    const maxTranslate = stickyHeader.current.clientWidth - window.innerWidth;
+                    const maxTranslate = stickyHeader?.current?.clientWidth ? stickyHeader.current.clientWidth - window.innerWidth : 0;
                     const translateX = -progress * maxTranslate;
                     gsap.set(stickyHeader.current,
                         {

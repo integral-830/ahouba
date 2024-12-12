@@ -9,8 +9,8 @@ const SponsorText = () => {
     sText.forEach(sentence => {
         let clutter = ""
         const sentenceText = sentence.textContent;
-        const splittedText = sentenceText.split("")
-        splittedText.forEach(word => {
+        const splittedText = sentenceText?.split("")
+        splittedText?.forEach(word => {
             clutter += `<span>${word}</span>`
         })
         sentence.innerHTML = clutter

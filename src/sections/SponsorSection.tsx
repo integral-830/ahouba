@@ -1,7 +1,8 @@
 import SponsorText from "../components/SponsorText.tsx";
 import Sponsors from "../components/Sponsors.tsx";
-import {FaFacebook, FaFacebookF, FaInstagram, FaYoutube} from "react-icons/fa";
+import {FaFacebookF, FaInstagram, FaYoutube} from "react-icons/fa";
 import {BsTwitterX} from "react-icons/bs";
+import SponsorIcon from "../components/SponsorIcon.tsx";
 
 const SponsorSection = () => {
 
@@ -16,18 +17,18 @@ const SponsorSection = () => {
                 <h1 className="special-font text-[8vh] text-center text-[#edff66] w-full items-start">IIIT
                     MANIPUR</h1>
                 <div className="w-full h-[70px] flex flex-row justify-around items-center gap-4 px-16 lg:px-96 py-4">
-                    <div className="w-[50px] h-[50px] border-[#edff66] border-2 p-4 items-center rounded-full">
+                    <SponsorIcon>
                         <FaYoutube fill="#edff66" className="h-full w-full" />
-                    </div>
-                    <div className="w-[50px] h-[50px] border-[#edff66] border-2 p-4 items-center rounded-full">
+                    </SponsorIcon>
+                    <SponsorIcon>
                         <FaFacebookF  fill="#edff66" className="h-full w-full" />
-                    </div>
-                    <div className="w-[50px] h-[50px] border-[#edff66] border-2 p-4 items-center rounded-full">
+                    </SponsorIcon>
+                    <SponsorIcon>
                         <FaInstagram fill="#edff66" className="h-full w-full" />
-                    </div>
-                    <div className="w-[50px] h-[50px] border-[#edff66] border-2 p-4 items-center rounded-full">
+                    </SponsorIcon>
+                    <SponsorIcon>
                         <BsTwitterX fill="#edff66" className="h-full w-full" />
-                    </div>
+                    </SponsorIcon>
                 </div>
             </div>
         </section>

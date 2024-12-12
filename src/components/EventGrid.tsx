@@ -1,10 +1,5 @@
 import TiltEffect from "../utility/TiltEffect.tsx";
 import EventCard from "./EventCard.tsx";
-import ideaVideo from "../assets/videos/ideaVideo.mp4";
-import codeVideo from "../assets/videos/codehunt.mp4";
-import robo from "../assets/videos/robo.mp4";
-import progVideo from "../assets/videos/prog.mp4";
-import esport from "../assets/videos/esport.mp4";
 
 const EventGrid = () => {
     return (
@@ -12,7 +7,7 @@ const EventGrid = () => {
             <div className="lg:col-span-6 lg:row-span-4 rounded-3xl overflow-hidden">
                 <TiltEffect className="w-full h-full">
                     <EventCard
-                        src={ideaVideo}
+                        src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ideaVideo.mp4"
                         title="IDEATHON"
                         description="Ideathon: Unleash your creativity, collaborate with like-minded innovators, and transform your ideas into groundbreaking solutions that make a real impact !"
                     />
@@ -21,7 +16,7 @@ const EventGrid = () => {
             <div className="lg:col-span-3 lg:row-span-4 lg:row-start-5 lg:rounded-3xl overflow-hidden">
                 <TiltEffect className="w-full h-full">
                     <EventCard
-                        src={codeVideo}
+                        src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/codehunt.mp4"
                         title="CODEHUNT"
                         description="CodeHunt: Challenge your skills, compete for glory, and sharpen your coding abilities !"
                     />
@@ -30,7 +25,7 @@ const EventGrid = () => {
             <div className="lg:col-span-3 lg:row-span-3 lg:col-start-4 lg:row-start-5 rounded-3xl overflow-hidden">
                 <TiltEffect className="w-full h-full">
                     <EventCard
-                        src={robo}
+                        src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/robo.mp4"
                         title="ROBOWAR"
                         description="RoboWareEvent: Innovate, compete, and showcase your robotics skills !"
                     />
@@ -39,7 +34,7 @@ const EventGrid = () => {
             <div className="lg:col-span-3 lg:row-span-4 lg:col-start-4 lg:row-start-8 rounded-3xl overflow-hidden">
                 <TiltEffect className="w-full h-full">
                     <EventCard
-                        src={progVideo}
+                        src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/prog.mp4"
                         title="Competitive Programming"
                         description="Competitive Programming Event: Solve challenges, test your skills, and race to victory in the world of coding !"
                     />
@@ -48,7 +43,7 @@ const EventGrid = () => {
             <div className="lg:col-span-3 lg:row-span-4 lg:row-start-9 rounded-3xl overflow-hidden">
                 <TiltEffect className="w-full h-full">
                     <EventCard
-                        src={esport}
+                        src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/esport.mp4"
                         title="ESPORTS"
                         description="Esport Event: Compete, conquer, and rise to the top in the ultimate gaming showdown !"
                     />
