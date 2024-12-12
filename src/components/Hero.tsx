@@ -35,11 +35,11 @@ const Hero = () => {
             </div>
             <div className="w-full h-full px-20 flex flex-col justify-end items-end">
                 <div className="overflow-hidden">
-                    <h1 id="hero-title" className="special-font uppercase font-zentry text-[#DFDFF2] text-9xl lg:text-[10rem]">The
+                    <h1 id="hero-title" className="special-font uppercase font-zentry text-[#DFDFF2] text-6xl md:text-9xl lg:text-[10rem]">The
                         Dawn</h1>
                 </div>
                 <div className="overflow-hidden">
-                    <h1 id="hero-title" className="special-font uppercase font-zentry text-[#DFDFF2] text-9xl lg:text-[10rem]">of
+                    <h1 id="hero-title" className="special-font uppercase font-zentry text-[#DFDFF2] text-6xl md:text-9xl lg:text-[10rem]">of
                         Innovation</h1>
                 </div>
             </div>

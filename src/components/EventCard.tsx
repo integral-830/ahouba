@@ -18,10 +18,10 @@ export const EventCard = ({src, title, description}: EventCardProps) => {
             />
             <div className="relative z-10 flex size-full flex-col justify-between p-5">
                 <div className="w-full h-full flex items-start">
-                    <h1 className="special-font leading-tight p-10 text-[#DFDFF2] text-[8rem]">{title}</h1>
+                    <h1 className="special-font leading-tight p-10 text-[#DFDFF2] text-[5rem] md:text-[8rem]">{title}</h1>
                 </div>
                 <div className="w-2/3 h-full flex items-end">
-                    <p className="p-10 leading-tight  font-Roobert text-white w-full text-3xl">{description}</p>
+                    <p className="p-10 leading-tight  font-Roobert text-white w-full text-2xl md:text-3xl">{description}</p>
                 </div>
             </div>
         </div>

@@ -39,7 +39,7 @@ const EventSection = () => {
                 <div ref={marqueeRef} className="py-4">
                     <Marquee text={"innovation"} speed={260}/>
                 </div>
-                <h1 className="special-font text-[12rem] leading-tight mix-blend-difference text-[#DFDFF2] w-full items-start">TOP EVENTS</h1>
+                <h1 className="special-font text-[10rem] md:text-[12rem] leading-tight mix-blend-difference text-[#DFDFF2] w-full items-start">TOP EVENTS</h1>
                 <EventGrid/>
             </div>
         </section>

@@ -33,37 +33,37 @@ const Sponsors = () => {
         <div ref={sponsorContainerRef} className="min-h-lvh w-full flex flex-col relative">
             <div className="h-full w-full flex flex-col lg:flex-row justify-around items-center relative ">
                 <div id="spContainer" className=" w-full flex flex-col items-center">
-                    <h1 className="text-7xl font-coaster text-black items-start">TITLE SPONSORS</h1>
+                    <h1 className="text-5xl md:text-7xl font-coaster text-black items-start">TITLE SPONSORS</h1>
                     <img src={cubeTen} className="h-[150px] aspect-[1/1]" alt="cubeTen"/>
                 </div>
                 <div id="spContainer" className="flex flex-col w-full items-center">
-                    <h1 className="text-7xl font-coaster text-black items-start">ASSOCIATE SPONSORS</h1>
+                    <h1 className="text-5xl md:text-7xl font-coaster text-black items-start">ASSOCIATE SPONSORS</h1>
                     <div className="flex w-full justify-around lg:justify-center items-center">
-                        <img src={codeXp} className="h-[150px] aspect-[1/1]" alt="codeXp"/>
-                        <img src={stpi} className="h-[150px] aspect-[1/1]" alt="stpi"/>
+                        <img src={codeXp} className="h-[100px] md:h-[150px] aspect-[1/1]" alt="codeXp"/>
+                        <img src={stpi} className="h-[100px] md:h-[150px] aspect-[1/1]" alt="stpi"/>
                     </div>
                 </div>
             </div>
             <div className="h-full w-full flex justify-around items-center relative">
                 <div id="spContainer" className="flex flex-col items-center">
-                    <h1 className="text-7xl font-coaster text-black items-start">BANK PARTNERS</h1>
-                    <img src={icici} className="h-[150px] aspect-[1/1]" alt="icici"/>
+                    <h1 className="text-5xl md:text-7xl font-coaster text-black items-start">BANK PARTNERS</h1>
+                    <img src={icici} className="h-[100px] md:h-[150px] aspect-[1/1]" alt="icici"/>
                 </div>
             </div>
             <div className="h-full w-full flex flex-col lg:flex-row justify-around items-center relative">
                 <div id="spContainer" className="flex flex-col w-full items-center">
-                    <h1 className="text-7xl font-coaster text-black items-start">FOOD PARTNERS</h1>
+                    <h1 className="text-5xl md:text-7xl font-coaster text-black items-start">FOOD PARTNERS</h1>
                     <div className="flex w-full justify-around lg:justify-center items-center">
-                        <img src={a3} className="h-[150px] aspect-[1/1]" alt="a3"/>
-                        <img src={tamanna} className="h-[150px] aspect-[1/1]" alt="tamanna"/>
-                        <img src={likla} className="h-[150px] aspect-[1/1]" alt="likla"/>
+                        <img src={a3} className="h-[100px] md:h-[150px] aspect-[1/1]" alt="a3"/>
+                        <img src={tamanna} className="h-[100px] md:h-[150px] aspect-[1/1]" alt="tamanna"/>
+                        <img src={likla} className="h-[100px] md:h-[150px] aspect-[1/1]" alt="likla"/>
                     </div>
                 </div>
                 <div id="spContainer" className=" w-full flex flex-col items-center">
-                    <h1 className="text-7xl font-coaster text-black items-start">MEDIA PARTNERS</h1>
+                    <h1 className="text-5xl md:text-7xl font-coaster text-black items-start">MEDIA PARTNERS</h1>
                     <div className="flex w-full justify-around lg:justify-center items-center">
-                        <img src={tom} className="h-[150px] aspect-[1/1]" alt="tom"/>
-                        <img src={cubeTen} className="h-[150px] aspect-[1/1]" alt="cubeTen"/>
+                        <img src={tom} className="h-[100px] md:h-[150px] aspect-[1/1]" alt="tom"/>
+                        <img src={cubeTen} className="h-[100px] md:h-[150px] aspect-[1/1]" alt="cubeTen"/>
                     </div>
                 </div>
             </div>
