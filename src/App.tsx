@@ -32,7 +32,7 @@ function App() {
     })
     return (
 
-        <div className="App w-screen min-h-dvh relative" ref={containerRef}>
+        <div className="App w-screen min-h-lvh relative" ref={containerRef}>
                 <HeroSection/>
                 <MarqueeSection text={"AHOUBA"}/>
                 <HorizontalScroll/>

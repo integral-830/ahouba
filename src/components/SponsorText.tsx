@@ -5,19 +5,19 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger)
 
 const SponsorText = () => {
-    const sText = document.querySelectorAll("#sText")
-    sText.forEach(sentence => {
-        let clutter = ""
-        const sentenceText = sentence.textContent;
-        const splittedText = sentenceText?.split("")
-        splittedText?.forEach(word => {
-            clutter += `<span>${word}</span>`
-        })
-        sentence.innerHTML = clutter
-        console.log(sentence)
-    })
+
     useGSAP(() => {
-        gsap.to("#sT h1 span", {
+        const sText = document.querySelectorAll("#sText")
+        sText.forEach(sentence => {
+            let clutter = ""
+            const sentenceText = sentence.textContent;
+            const splitText = sentenceText?.split("")
+            splitText?.forEach(word => {
+                clutter += `<span id="sp">${word}</span>`
+            })
+            sentence.innerHTML = clutter
+        })
+        gsap.to("#sp", {
             color: "black",
             stagger: 0.2,
             scrollTrigger: {

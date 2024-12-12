@@ -30,7 +30,7 @@ const Sponsors = () => {
         })
     })
     return (
-        <div ref={sponsorContainerRef} className="min-h-dvh w-full flex flex-col relative">
+        <div ref={sponsorContainerRef} className="min-h-lvh w-full flex flex-col relative">
             <div className="h-full w-full flex flex-col lg:flex-row justify-around items-center relative ">
                 <div id="spContainer" className=" w-full flex flex-col items-center">
                     <h1 className="text-7xl font-coaster text-black items-start">TITLE SPONSORS</h1>

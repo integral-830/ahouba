@@ -17,7 +17,6 @@ const TiltEffect: React.FC<{ children: React.ReactNode; className?: string }> = 
 
         const newTransform = `perspective(700px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(.95, .95, .95)`;
 
-        // Directly transition the DOM element without relying on state
         gsap.to(itemRef.current, { duration: 1, transform: newTransform });
     };
 

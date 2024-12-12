@@ -33,7 +33,7 @@ const EventSection = () => {
         })
     })
     return (
-        <section ref={backgroungRef} className="w-screen min-h-dvh flex justify-center relative bg-[#DFDFF2]">
+        <section ref={backgroungRef} className="w-screen min-h-lvh flex justify-center relative bg-[#DFDFF2]">
             <div ref={gridRef}
                  className="flex w-4/5 h-full relative flex-col items-center justify-center px-10 py-12 md:px-40">
                 <div ref={marqueeRef} className="py-4">

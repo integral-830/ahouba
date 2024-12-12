@@ -7,7 +7,7 @@ import SponsorIcon from "../components/SponsorIcon.tsx";
 const SponsorSection = () => {
 
     return (
-        <section className="sponsorSection w-screen min-h-[200dvh] relative bg-black">
+        <section className="sponsorSection w-screen min-h-[200lvh] relative bg-black">
             <div
                 className="w-screen h-full relative flex flex-col gap-4 md:px-40 py-12 justify-center items-center bg-[#edff66] rounded-b-[50px]">
                 <SponsorText/>
