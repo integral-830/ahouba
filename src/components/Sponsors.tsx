@@ -30,8 +30,8 @@ const Sponsors = () => {
         })
     })
     return (
-        <div ref={sponsorContainerRef} className="min-h-lvh w-full flex flex-col relative">
-            <div className="h-full w-full flex flex-col lg:flex-row justify-around items-center relative ">
+        <div ref={sponsorContainerRef} className=" w-full flex flex-col relative">
+            <div className=" w-full pb-24 flex flex-col lg:flex-row justify-around items-center relative ">
                 <div id="spContainer" className=" w-full flex flex-col items-center">
                     <h1 className="text-5xl md:text-7xl font-coaster text-black items-start">TITLE SPONSORS</h1>
                     <img src={cubeTen} className="h-[150px] aspect-[1/1]" alt="cubeTen"/>

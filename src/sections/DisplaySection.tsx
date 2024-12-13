@@ -1,5 +1,5 @@
 import Marquee from "../components/Marquee.tsx";
-import EventGrid from "../components/EventGrid.tsx";
+import DisplayGrid from "../components/DisplayGrid.tsx";
 import {useGSAP} from "@gsap/react";
 import {useRef} from "react";
 import gsap from "gsap";
@@ -7,7 +7,7 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const EventSection = () => {
+const DisplaySection = () => {
     const marqueeRef = useRef(null);
     const backgroungRef = useRef(null);
     const gridRef = useRef(null);
@@ -40,9 +40,9 @@ const EventSection = () => {
                     <Marquee text={"innovation"} speed={260}/>
                 </div>
                 <h1 className="special-font text-[10rem] md:text-[12rem] leading-tight mix-blend-difference text-[#DFDFF2] w-full items-start">TOP EVENTS</h1>
-                <EventGrid/>
+                <DisplayGrid/>
             </div>
         </section>
     )
 }
-export default EventSection
+export default DisplaySection

@@ -24,10 +24,9 @@ function Navbar() {
                 {
                     menuItems.map(((menuItem, index) => (
                         <div onClick={()=>alert("Ayush")} key={index} className="group relative overflow-hidden px-8 py-3 rounded-full border-[#DFDFF2] border text-3xl after:absolute after:w-full after:h-full after:bg-[#DFDFF2] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:rounded hover:after:transition-all hover:after:ease-out hover:after:duration-200">
-                            <a href={menuItem.link}
-                               className=" no-underline relative z-10 text-[#DFDFF2] group-hover:text-black group-hover:no-underline group-hover:cursor-pointer">
+                            <h2 className=" no-underline relative z-10 text-[#DFDFF2] group-hover:text-black group-hover:no-underline group-hover:cursor-pointer">
                                 {menuItem.title}
-                            </a>
+                            </h2>
                         </div>
                     )))
                 }

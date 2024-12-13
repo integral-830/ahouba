@@ -8,7 +8,7 @@ import MarqueeSection from "./sections/MarqueeSection.tsx";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import HorizontalScroll from "./sections/HorizontalScroll.tsx";
-import EventSection from "./sections/EventSection.tsx";
+import DisplaySection from "./sections/DisplaySection.tsx";
 import SponsorSection from "./sections/SponsorSection.tsx";
 
 gsap.registerPlugin(ScrollTrigger)
@@ -36,7 +36,7 @@ function App() {
                 <HeroSection/>
                 <MarqueeSection text={"AHOUBA"}/>
                 <HorizontalScroll/>
-                <EventSection/>
+                <DisplaySection/>
                 <SponsorSection/>
                 <Cursor/>
         </div>

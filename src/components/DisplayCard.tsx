@@ -4,7 +4,7 @@ interface EventCardProps {
     description?: string;
 }
 
-export const EventCard = ({src, title, description}: EventCardProps) => {
+export const DisplayCard = ({src, title, description}: EventCardProps) => {
 
 
     return (
@@ -28,5 +28,5 @@ export const EventCard = ({src, title, description}: EventCardProps) => {
     );
 };
 
-export default EventCard;
+export default DisplayCard;
 
