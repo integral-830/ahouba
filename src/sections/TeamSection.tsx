@@ -12,7 +12,7 @@ interface organizerData {
     phone: string;
 }
 
-const organizerData:Array<organizerData> = [
+const organizerData: Array<organizerData> = [
     {
         name: "Alok",
         image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -320,54 +320,62 @@ const TeamSection = () => {
 
     return (
         <section ref={teamSection} className=" relative h-lvh w-screen overflow-hidden bg-[#a8a8d7]">
-            <div className="w-[50px] absolute top-10 left-60">
-                <h1 id="hero-title" className="special-font hero-heading">Support</h1>
-            </div>
-            <div ref={teamHeader}
-                 className="relative z-30 w-[1200vw] md:w-[750vw] lg:w-[400vw] h-full flex flex-col will-change-transform ">
-                <div className="h-full w-full flex items-center justify-around">
-                    <div className="w-[50px]"></div>
-                    {organizerData.map((organizer, index) => {
-                            if (index % 3 === 0) {
-                                return (<ProfileCard name={organizer.name} key={index} contact={organizer.phone}
-                                                     image={organizer.image} position={organizer.position}/>
-                                )
-                            }
-                        }
-                    )
-                    }
-                    <div className="w-[80px]"></div>
-                </div>
-                <div className="h-full w-full flex items-center justify-around">
-                    {organizerData.map((organizer, index) => {
-                            if (index % 3 === 1) {
-                                return (<ProfileCard name={organizer.name} key={index} contact={organizer.phone}
-                                                     image={organizer.image} position={organizer.position}/>
-                                )
-                            }
-                        }
-                    )
-                    }
 
+            <div ref={teamHeader}
+                 className="relative z-30 w-[1250vw] md:w-[750vw] lg:w-[400vw] h-full flex flex-col will-change-transform ">
+                <div className="absolute w-full h-full flex flex-col items-center p-36">
+                    <h1 className="customFont text-[22vh] text-[#dfdff2] w-full">Tech--Team</h1>
+                    <h1 className="customFont text-[28vh] text-[#dfdff2] w-full h-full text-center">Bit-Busters</h1>
                 </div>
-                <div className="h-full w-full flex items-center justify-around">
-                    <div className="w-[200px]"></div>
-                    {organizerData.map((organizer, index) => {
-                            if (index % 3 === 2) {
-                                return (<ProfileCard name={organizer.name} key={index} contact={organizer.phone}
-                                                     image={organizer.image} position={organizer.position}/>
-                                )
+                <div className="absolute w-full h-full flex flex-col will-change-transform">
+                    <div className="h-full w-full flex items-center justify-around">
+                        <div className="w-[50px]"></div>
+                        {organizerData.map((organizer, index) => {
+                                if (index % 3 === 0) {
+                                    return (<ProfileCard name={organizer.name} key={index} contact={organizer.phone}
+                                                         image={organizer.image} position={organizer.position}/>
+                                    )
+                                }
                             }
+                        )
                         }
-                    )
-                    }
-                    <div className="w-fit">
-                        <h1 id="hero-title" className="special-font text-[8vh] text-[#DFDFF2]">/your-helping-hands</h1>
+                        <div className="w-[80px]"></div>
+                    </div>
+                    <div className="h-full w-full flex items-center justify-around">
+                        {organizerData.map((organizer, index) => {
+                                if (index % 3 === 1) {
+                                    return (
+                                        <ProfileCard
+                                            name={organizer.name} key={index} contact={organizer.phone}
+                                            image={organizer.image} position={organizer.position}
+                                        />
+                                    )
+                                }
+                            }
+                        )
+                        }
+
+                    </div>
+                    <div className="h-full w-full flex items-center justify-around">
+                        <div className="w-[200px]"></div>
+                        {organizerData.map((organizer, index) => {
+                                if (index % 3 === 2) {
+                                    return (
+                                        <ProfileCard
+                                            name={organizer.name} key={index} contact={organizer.phone}
+                                            image={organizer.image} position={organizer.position}
+                                        />
+                                    )
+                                }
+                            }
+                        )
+                        }
+                        <div className="w-fit">
+                            <h1 id="hero-title"
+                                className="customFont text-[8vh] text-[#DFDFF2]">/your-helping-hands</h1>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="w-[50px] absolute bottom-60 left-96">
-                <h1 id="hero-title" className="special-font hero-heading">Team</h1>
             </div>
         </section>
     )

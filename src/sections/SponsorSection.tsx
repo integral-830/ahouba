@@ -14,7 +14,7 @@ const SponsorSection = () => {
                 <Sponsors/>
             </div>
             <div className="w-full flex flex-col gap-4 md:px-40 py-12">
-                <h1 className="special-font text-[8vh] text-center text-[#edff66] w-full items-start">IIIT
+                <h1 className="customFont text-[8vh] text-center text-[#edff66] w-full items-start">IIIT
                     MANIPUR</h1>
                 <div className="w-full h-[70px] flex flex-row justify-around items-center gap-4 px-16 lg:px-96 py-4">
                     <SponsorIcon>

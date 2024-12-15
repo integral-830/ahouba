@@ -26,8 +26,8 @@ const DisplaySection = () => {
             duration: 2,
             scrollTrigger: {
                 trigger: gridRef.current,
-                start: "top top",
-                end: "bottom bottom",
+                start: "top center",
+                end: "bottom top",
                 scrub: 0.5,
             }
         })
@@ -39,7 +39,7 @@ const DisplaySection = () => {
                 <div ref={marqueeRef} className="py-4">
                     <Marquee text={"innovation"} speed={260}/>
                 </div>
-                <h1 className="special-font text-[10rem] md:text-[12rem] leading-tight mix-blend-difference text-[#DFDFF2] w-full items-start">TOP EVENTS</h1>
+                <h1 className="customFont text-[10rem] md:text-[12rem] leading-tight mix-blend-difference text-[#DFDFF2] w-full items-start">TOP EVENTS</h1>
                 <DisplayGrid/>
             </div>
         </section>

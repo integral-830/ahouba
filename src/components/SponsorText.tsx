@@ -23,7 +23,7 @@ const SponsorText = () => {
             scrollTrigger: {
                 trigger: "#sT",
                 start: "top center",
-                end: "bottom center",
+                end: "center top",
                 scrub: 2,
             }
         })
@@ -32,7 +32,7 @@ const SponsorText = () => {
     return (
         <div id="sT" className="w-full py-24 px-12 lg:container lg:px-96 lg:justify-center flex flex-col items-center">
             <h1 id="sText"
-                className="special-font text-[10vh] leading-tight text-center text-[#98a051] w-full items-start">SPONSORS</h1>
+                className="customFont text-[10vh] leading-tight text-center text-[#98a051] w-full items-start">SPONSORS</h1>
             <div className="w-full h-[2px] bg-black my-20"></div>
             <h1 id="sText"
                 className="py-2 text-[#98a051] text-[2vh] lg:text-[4vh] leading-tight text-center lg:leading-relaxed font-coaster w-full items-start">On

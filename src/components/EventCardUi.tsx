@@ -1,7 +1,7 @@
 import {LuCalendarFold} from "react-icons/lu";
 import {IoLocationOutline} from "react-icons/io5";
 import {GoArrowUpRight, GoClock} from "react-icons/go";
-import Button from "./Button.tsx";
+import EventCardButton from "./EventCardButton.tsx";
 import InfoBadge from "./InfoBadge.tsx";
 
 interface EventCardUiProps {
@@ -26,14 +26,13 @@ const EventCardUi = (props: EventCardUiProps) => {
             <div className="w-full h-fit rounded-2xl flex flex-col gap-4 overflow-hidden">
                 <h1 className=" text-[5dvh] font-coaster">{title}</h1>
                 <div className=" flex w-full h-fit gap-6 justify-items-start overflow-hidden">
-                    <InfoBadge icon={<LuCalendarFold/>} text={date} />
-                    <InfoBadge icon={<GoClock/>} text={time} />
-                    <InfoBadge icon={<IoLocationOutline/>} text={location} />
+                    <InfoBadge icon={<LuCalendarFold size="15"/>} text={date} />
+                    <InfoBadge icon={<GoClock size="15"/>} text={time} />
+                    <InfoBadge icon={<IoLocationOutline size="15"/>} text={location} />
                 </div>
-                <p className=" text-[1.3dvh] h-fit font-Roobert overflow-hidden">{description}</p>
+                <p className=" text-[1.4dvh] h-fit font-Roobert overflow-hidden">{description}</p>
                 <div className="w-full h-fit flex gap-4">
-                    <Button title="Register" icon={<GoArrowUpRight className="z-10 stroke-1"/>}/>
-                    <Button title="Explore" icon={<GoArrowUpRight className="z-10 stroke-1"/>}/>
+                    <EventCardButton title="Explore" icon={<GoArrowUpRight className="z-10 stroke-1"/>} link={`/ahouba/events/${title}`}/>
                 </div>
             </div>
         </div>

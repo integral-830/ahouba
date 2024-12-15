@@ -1,15 +1,14 @@
 import './App.css'
 import 'lenis/dist/lenis.css'
-import Cursor from "./components/Cursor.tsx";
 import {useEffect, useRef} from "react";
 import Lenis from "lenis";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
-import Navbar from "./components/Navbar.tsx";
-import {BrowserRouter, Route, Routes} from "react-router";
-import LandingPage from "./Pages/LandingPage.tsx";
-import EventSection from "./sections/EventSection.tsx";
-import TeamSection from "./sections/TeamSection.tsx";
+import HeroSection from "./sections/HeroSection.tsx";
+import MarqueeSection from "./sections/MarqueeSection.tsx";
+import HorizontalScroll from "./sections/HorizontalScroll.tsx";
+import DisplaySection from "./sections/DisplaySection.tsx";
+import SponsorSection from "./sections/SponsorSection.tsx";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -32,16 +31,11 @@ function App() {
     })
     return (
         <div ref={containerRef} className="App w-screen min-h-lvh relative">
-            <BrowserRouter>
-                <Navbar/>
-                <Cursor/>
-                <Routes>
-                        <Route path="/ahouba/" element={<LandingPage/>}/>
-                        <Route path="/ahouba/events" element={<EventSection/>}/>
-                        <Route path="/ahouba/team" element={<TeamSection/>}/>
-                        <Route path="/ahouba/developer" element={<TeamSection/>}/>
-                </Routes>
-            </BrowserRouter>
+            <HeroSection/>
+            <MarqueeSection text={"AHOUBA"}/>
+            <HorizontalScroll/>
+            <DisplaySection/>
+            <SponsorSection/>
         </div>
 
     )

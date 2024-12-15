@@ -5,7 +5,7 @@ const InfoBadge:React.FC<{ icon?: React.ReactNode; text: string }> = ({ icon, te
         <div
             className="w-fit h-fit rounded-full flex gap-2 items-center px-4 py-2 bg-[#a0a0d3] overflow-hidden">
             {icon}
-            <h2 className=" text-[1.3dvh] font-Roobert">{text}</h2>
+            <h2 className=" text-[1.3dvh] font-Roobert text-center">{text}</h2>
         </div>
     )
 }

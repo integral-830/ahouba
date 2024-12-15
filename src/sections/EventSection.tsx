@@ -1,4 +1,5 @@
 import EventCardUi from "../components/EventCardUi.tsx";
+import TiltEffect from "../utility/TiltEffect.tsx";
 
 interface event {
     id: number;
@@ -134,27 +135,46 @@ const events: Array<event> = [
 const EventSection = () => {
     return (
         <section className="w-screen min-h-lvh bg-[#a8a8d7] pt-36 lg:px-20">
-            <h1 className="font-coaster text-[5vw] text-start text-[#c4c4ed] px-16 w-full">#BuildBeyondBoundaries</h1>
-            <div className="w-full h-fit relative  flex flex-col lg:flex-row gap-10 p-16 ">
-                <div className="flex flex-col w-full px-4 gap-4">
+            <h1 className="font-coaster text-[5vw] text-start text-[#c4c4ed] px-16 w-full">#Dawn-Of-Innovation</h1>
+            <div
+                className="w-full h-fit relative  flex flex-col md:flex-row gap-20 md:gap-4 lg:gap-20 p-4 sm:px-60 md:px-4 lg:px-20 ">
+                <div className="flex flex-col w-full gap-12">
                     {events.map((event, index) => {
                             if (index % 2 === 0) {
                                 return (
-                                    <EventCardUi id={event.id} title={event.title} description={event.description}
-                                                 image={event.image} date={event.date} time={event.time}
-                                                 location={event.location}/>
+                                    <TiltEffect key={index}>
+                                        <EventCardUi
+                                            key={index}
+                                            id={event.id}
+                                            title={event.title}
+                                            description={event.description}
+                                            image={event.image}
+                                            date={event.date}
+                                            time={event.time}
+                                            location={event.location}
+                                        />
+                                    </TiltEffect>
                                 )
                             }
                         }
                     )}
                 </div>
-                <div className="flex flex-col w-full px-4 gap-4">
+                <div className="flex flex-col w-full gap-12">
                     {events.map((event, index) => {
                             if (index % 2 === 1) {
                                 return (
-                                    <EventCardUi id={event.id} title={event.title} description={event.description}
-                                                 image={event.image} date={event.date} time={event.time}
-                                                 location={event.location}/>
+                                    <TiltEffect key={index}>
+                                        <EventCardUi
+                                            key={index}
+                                            id={event.id}
+                                            title={event.title}
+                                            description={event.description}
+                                            image={event.image}
+                                            date={event.date}
+                                            time={event.time}
+                                            location={event.location}
+                                        />
+                                    </TiltEffect>
                                 )
                             }
                         }

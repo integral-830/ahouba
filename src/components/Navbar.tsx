@@ -1,6 +1,9 @@
 import Deer from "../assets/images/navDeer.svg"
-import {TbLayoutGrid} from "react-icons/tb";
 import {Link} from "react-router-dom";
+import {useEffect, useRef, useState} from "react";
+import {useWindowScroll} from "react-use";
+import gsap from "gsap";
+import {IoMenu} from "react-icons/io5";
 
 
 interface MenuItem {
@@ -9,6 +12,33 @@ interface MenuItem {
 }
 
 function Navbar() {
+    const navRef = useRef<HTMLDivElement | null>(null);
+    const {y: yScroll} = useWindowScroll();
+    const [lastScrollPosition, setLastScrollPosition] = useState(0);
+    const [isNavVisible, setNavVisible] = useState(true);
+
+    useEffect(() => {
+        if (!navRef.current) return;
+        if (yScroll === 0) {
+            setNavVisible(true);
+            navRef.current.classList.remove("nav-bg");
+        } else if (yScroll > lastScrollPosition) {
+            setNavVisible(false);
+            navRef.current.classList.add("nav-bg");
+        } else if (yScroll < lastScrollPosition) {
+            setNavVisible(true);
+            navRef.current.classList.add("nav-bg");
+        }
+        setLastScrollPosition(yScroll);
+    }, [yScroll, lastScrollPosition]);
+
+    useEffect(() => {
+        gsap.to(navRef.current, {
+            y: isNavVisible ? 0 : -100,
+            opacity: isNavVisible ? 0.7 : 0,
+            duration: 0.5,
+        });
+    }, [isNavVisible]);
 
     const menuItems: Array<MenuItem> = [
         {title: "Home", link: "/ahouba/"},
@@ -18,10 +48,10 @@ function Navbar() {
     ]
 
     return (
-        <div className="absolute top-0 left-0 z-30 flex items-center justify-between align-middle px-7 lg:px-40 w-screen">
+        <div ref={navRef} className="fixed top-0 left-0 z-30 w-full flex items-center justify-between align-middle px-7">
             <img className="h-[70px] w-[70px] hover:scale-125 transition-all ease-in duration-300" src={Deer}
                  alt="icon"/>
-            <TbLayoutGrid className="h-[35px] w-[35px] stroke-[#DFDFF2] mx-3 md:hidden"/>
+            <IoMenu className="h-[35px] w-[40px] stroke-[#DFDFF2] mx-3 md:hidden"/>
             <div className="hidden md:flex w-full items-center justify-end gap-6">
                 {
                     menuItems.map(((menuItem, index) => (
