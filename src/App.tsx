@@ -1,15 +1,15 @@
 import './App.css'
 import 'lenis/dist/lenis.css'
-import HeroSection from "./sections/HeroSection.tsx";
 import Cursor from "./components/Cursor.tsx";
 import {useEffect, useRef} from "react";
 import Lenis from "lenis";
-import MarqueeSection from "./sections/MarqueeSection.tsx";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
-import HorizontalScroll from "./sections/HorizontalScroll.tsx";
-import DisplaySection from "./sections/DisplaySection.tsx";
-import SponsorSection from "./sections/SponsorSection.tsx";
+import Navbar from "./components/Navbar.tsx";
+import {BrowserRouter, Route, Routes} from "react-router";
+import LandingPage from "./Pages/LandingPage.tsx";
+import EventSection from "./sections/EventSection.tsx";
+import TeamSection from "./sections/TeamSection.tsx";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -23,7 +23,7 @@ function App() {
         });
         gsap.ticker.lagSmoothing(0);
 
-        function updateTime(time: any) {
+        function updateTime(time: number) {
             lenis.raf(time);
             requestAnimationFrame(updateTime)
         }
@@ -31,15 +31,19 @@ function App() {
         requestAnimationFrame(updateTime);
     })
     return (
-
-        <div className="App w-screen min-h-lvh relative" ref={containerRef}>
-                <HeroSection/>
-                <MarqueeSection text={"AHOUBA"}/>
-                <HorizontalScroll/>
-                <DisplaySection/>
-                <SponsorSection/>
+        <div ref={containerRef} className="App w-screen min-h-lvh relative">
+            <BrowserRouter>
+                <Navbar/>
                 <Cursor/>
+                <Routes>
+                        <Route path="/ahouba/" element={<LandingPage/>}/>
+                        <Route path="/ahouba/events" element={<EventSection/>}/>
+                        <Route path="/ahouba/team" element={<TeamSection/>}/>
+                        <Route path="/ahouba/developer" element={<TeamSection/>}/>
+                </Routes>
+            </BrowserRouter>
         </div>
+
     )
 }
 

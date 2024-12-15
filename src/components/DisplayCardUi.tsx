@@ -4,7 +4,7 @@ interface Cardprops {
     description: string;
     image: string;
 }
-const CardUi = ({title,description,image}:Cardprops) => {
+const DisplayCardUi = ({title,description,image}:Cardprops) => {
     return (
         <div id="card" onClick={() => alert("Ayush")} className="relative w-[450px] h-4/5 overflow-hidden hover:scale-105 transition-all ease-in duration-300 rounded-3xl">
             <div className="absolute w-full h-full bg-[#c4c4ed] blur(10px) opacity-95">
@@ -513,4 +513,4 @@ const CardUi = ({title,description,image}:Cardprops) => {
         </div>
     )
 }
-export default CardUi
+export default DisplayCardUi

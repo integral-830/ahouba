@@ -19,7 +19,7 @@ const Cursor = () => {
         }
     })
     return (
-        <div id="cursor" className="fixed top-0 left-0 h-[30px] w-[30px] mix-blend-difference bg-[#DFDFF2] rounded-full z-1000 "></div>
+        <div id="cursor" className="fixed top-0 left-0 h-[30px] w-[30px] mix-blend-difference pointer-events-none bg-[#DFDFF2] rounded-full z-[10] "></div>
     )
 }
 export default Cursor

@@ -20,8 +20,12 @@ const TiltEffect: React.FC<{ children: React.ReactNode; className?: string }> = 
         gsap.to(itemRef.current, { duration: 1, transform: newTransform });
     };
 
+    const handleMouseLeave = () => {
+        gsap.to(itemRef.current, { duration: 1, transform: `perspective(700px) rotateX(0deg) rotateY(0deg) scale3d(.95, .95, .95)` });
+    }
+
     return (
-        <div ref={itemRef} className={className} onMouseMove={handleMouseMove}>
+        <div ref={itemRef} className={className} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
             {children}
         </div>
     );

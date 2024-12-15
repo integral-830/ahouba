@@ -36,7 +36,6 @@ const HorizontalScroll = () => {
                  className="absolute pl-28 top-0 left-0 w-[800vw] md:w-[400vh] h-full flex items-center justify-center will-change-transform bg-[#DFDFF2]">
                 <h1 className="font-exwaye text-[30vh] uppercase font-bold text-black">Develop * Debug * Dominate</h1>
             </div>
-
         </section>
     )
 }

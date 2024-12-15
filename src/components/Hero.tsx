@@ -24,10 +24,10 @@ const Hero = () => {
         })
     }, [])
     return (
-        <div id="h" className="w-screen h-full flex  flex-col p-10 ">
+        <div id="h" className="w-screen h-full flex  flex-col pt-40 p-10">
             <div className="w-full h-full flex flex-col">
                 <div className="overflow-hidden h-full">
-                    <h1 id="hero-title" className="special-font hero-heading">AH<b>O</b>UBA</h1>
+                    <h1 id="hero-title" className="special-font hero-heading">AHOUBA</h1>
                 </div>
             </div>
             <div className="w-full h-full px-20 py-60 flex flex-col">
