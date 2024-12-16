@@ -40,7 +40,10 @@ body {
         font-feature-settings: "ss01" on;
     }
     .nav-bg {
-        @apply bg-black/40 rounded-b-3xl;
+        @apply bg-black/30 rounded-b-3xl;
+    }
+    .nav-full {
+        @apply bg-black/95;
     }
     .hero-heading {
         @apply uppercase font-zentry text-[#DFDFF2] text-9xl sm:text-[10rem] md:text-[14rem] lg:text-[20rem];
