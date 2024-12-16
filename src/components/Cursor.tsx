@@ -2,6 +2,7 @@ import gsap from "gsap";
 import {useEffect} from "react";
 
 const Cursor = () => {
+    const isMobileView = !!window.navigator.userAgent.match(/Android/i);
     useEffect(()=>{
         const handleMouseEvent = (event:MouseEvent)=>{
             const {clientX, clientY} = event;
@@ -19,7 +20,7 @@ const Cursor = () => {
         }
     })
     return (
-        <div id="cursor" className="fixed top-0 left-0 h-[30px] w-[30px] mix-blend-difference pointer-events-none border-4 border-[#DFDFF2] rounded-full z-50 "></div>
+        <div id="cursor" className={`${isMobileView?"hidden":""}fixed top-0 left-0 h-[30px] w-[30px] mix-blend-difference pointer-events-none border-4 border-[#DFDFF2] rounded-full z-50 `}></div>
     )
 }
 export default Cursor
