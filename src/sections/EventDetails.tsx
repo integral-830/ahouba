@@ -1,6 +1,7 @@
 import {LuCalendarFold} from "react-icons/lu";
 import {GoArrowUpRight, GoClock} from "react-icons/go";
 import {IoLocationOutline} from "react-icons/io5";
+import {Link} from "react-router-dom";
 
 const EventDetails = () => {
     return (
@@ -52,20 +53,20 @@ const EventDetails = () => {
 
 
                     <div className="w-full h-fit flex gap-4">
-                        <div
+                        <Link to={""}
                             className="group flex gap-4 items-center relative overflow-hidden px-8 py-3 rounded-full w-fit h-fit border-[#8585C6] border text-3xl after:absolute after:w-full after:h-full after:bg-[#DFDFF2] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:rounded hover:after:transition-all hover:after:ease-out hover:after:duration-200">
                             <h1 className=" no-underline relative z-10 font-Roobert group-hover:text-black group-hover:no-underline group-hover:cursor-pointer">
                                 Register
                             </h1>
                             <GoArrowUpRight className="z-10 stroke-1"/>
-                        </div>
-                        <div
+                        </Link>
+                        <Link to={""}
                             className="group flex gap-4 items-center relative overflow-hidden px-8 py-3 rounded-full w-fit h-fit border-[#8585C6] border text-3xl after:absolute after:w-full after:h-full after:bg-[#DFDFF2] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:rounded hover:after:transition-all hover:after:ease-out hover:after:duration-200">
                             <h1 className=" no-underline relative z-10 font-Roobert group-hover:text-black group-hover:no-underline group-hover:cursor-pointer">
                                 Rulebook
                             </h1>
                             <GoArrowUpRight className="z-10 stroke-1"/>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
