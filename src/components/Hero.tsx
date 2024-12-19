@@ -30,9 +30,7 @@ const Hero = () => {
                     <h1 id="hero-title" className="customFont hero-heading">AHOUBA</h1>
                 </div>
             </div>
-            <div className="w-full h-full px-20 py-60 flex flex-col">
-                    LOGO
-            </div>
+            <div className="w-full h-full px-20 py-60 flex flex-col"></div>
             <div className="w-full h-full px-20 flex flex-col justify-end items-end">
                 <div className="overflow-hidden">
                     <h1 id="hero-title" className="customFont uppercase font-zentry text-[#DFDFF2] text-6xl md:text-9xl lg:text-[10rem]">The
