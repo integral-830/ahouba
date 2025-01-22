@@ -31,7 +31,7 @@ const HorizontalScroll = () => {
     })
 
     return (
-        <section ref={stickySection} className=" relative min-h-lvh w-screen overflow-hidden">
+        <section ref={stickySection} className=" relative h-lvh w-screen overflow-hidden">
             <div ref={stickyHeader}
                  className="absolute pl-28 top-0 left-0 w-[800vw] md:w-[400vh] h-full flex items-center justify-center will-change-transform bg-[#DFDFF2]">
                 <h1 className="font-exwaye text-[30vh] uppercase font-bold text-black">Develop * Debug * Dominate</h1>
