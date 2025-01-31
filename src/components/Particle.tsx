@@ -4,7 +4,7 @@ import {loadSlim} from "@tsparticles/slim";
 
 const ParticlesComponent = (props: { id: string | undefined; }) => {
 
-    const [init, setInit] = useState(false);
+    const [, setInit] = useState(false);
     useEffect(() => {
         initParticlesEngine(async (engine) => {
             await loadSlim(engine);
@@ -13,7 +13,7 @@ const ParticlesComponent = (props: { id: string | undefined; }) => {
         });
     }, []);
 
-    const particlesLoaded = (container) => {};
+    const particlesLoaded = () => {};
 
     const options = useMemo(
         () => ({
@@ -86,6 +86,7 @@ const ParticlesComponent = (props: { id: string | undefined; }) => {
         [],
     );
 
+    // @ts-ignore
     return <Particles id={props.id} init={particlesLoaded} options={options} />;
 };
 
