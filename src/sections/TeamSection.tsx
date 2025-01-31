@@ -320,7 +320,7 @@ const TeamSection = () => {
     })
 
     return (
-        <section ref={teamSection} className=" relative h-lvh w-screen overflow-hidden">
+        <section ref={teamSection} className=" relative min-h-lvh w-screen overflow-hidden">
             <ParticlesComponent id="particles" />
             <div ref={teamHeader}
                  className="relative z-30 w-[1250vw] md:w-[750vw] lg:w-[400vw] h-full flex flex-col will-change-transform ">
