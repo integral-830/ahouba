@@ -14,6 +14,10 @@ export default {
                 'coaster': ["coaster","sans-serif"],
             },
         },
+        gradientColorStopPositions: {
+            2: '2%',
+            98: '98%',
+        },
     },
     plugins: [
         aspect,

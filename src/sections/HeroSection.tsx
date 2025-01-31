@@ -1,11 +1,12 @@
 import Hero from "../components/Hero.tsx";
+import ParticlesComponent from "../components/Particle.tsx";
 
 function HeroSection() {
 
     return (
-        <section className="relative h-lvh w-screen bg-[#DFDFF2]">
+        <section className="relative h-lvh w-screen ">
             <div className=" h-lvh w-screen absolute">
-                <video src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/bgVideo.mp4" autoPlay loop muted className="h-lvh w-screen object-cover"/>
+                <ParticlesComponent id="particles" />
             </div>
             <div className="absolute flex flex-col h-lvh w-screen overflow-hidden">
                 <Hero/>

@@ -14,7 +14,7 @@ const ProfileCard = ({name, image, position, contact}: ProfileProps) => {
             <div className="flex items-center w-fit">
                 <div className="relative mr-5">
                     <img
-                        src={image} // Replace with actual image URL
+                        src={image}
                         alt="Profile"
                         className="w-[100px] md:w-[150px] h-[100px] md:h-[150px] rounded-full object-cover"
                     />
@@ -24,9 +24,9 @@ const ProfileCard = ({name, image, position, contact}: ProfileProps) => {
                     </div>
                 </div>
                 <div className="flex flex-col">
-                    <h2 className="text-[3vh] font-coaster text-black mix-blend-difference font-bold">{name}</h2>
-                    <p className="text-[1.5vh] font-Roobert mix-blend-difference">{position}</p>
-                    <p className="text-[1.5vh]  mix-blend-difference">{contact}</p>
+                    <h2 className="text-[3vh] font-coaster text-[#dfdff2] mix-blend-difference font-bold">{name}</h2>
+                    <p className="text-[1.5vh] text-[#dfdff2] font-Roobert mix-blend-difference">{position}</p>
+                    <p className="text-[1.5vh] text-[#dfdff2] mix-blend-difference">{contact}</p>
                 </div>
             </div>
         </TiltEffect>

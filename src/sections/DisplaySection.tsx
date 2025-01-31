@@ -12,15 +12,6 @@ const DisplaySection = () => {
     const backgroungRef = useRef(null);
     const gridRef = useRef(null);
     useGSAP(() => {
-        gsap.to(backgroungRef.current, {
-            backgroundColor: "#000000",
-            scrollTrigger: {
-                trigger: marqueeRef.current,
-                start: "120 top",
-                end: "bottom bottom",
-                scrub: 1,
-            }
-        })
         gsap.to(gridRef.current, {
             width: "100%",
             duration: 2,
@@ -33,11 +24,11 @@ const DisplaySection = () => {
         })
     })
     return (
-        <section ref={backgroungRef} className="w-screen min-h-lvh flex justify-center relative bg-[#DFDFF2]">
+        <section ref={backgroungRef} className="w-screen min-h-lvh flex justify-center relative bg-transparent">
             <div ref={gridRef}
                  className="flex w-4/5 h-full relative flex-col items-center justify-center px-10 py-12 md:px-40">
                 <div ref={marqueeRef} className="py-4">
-                    <Marquee text={"innovation"} speed={260}/>
+                    <Marquee text={"innovation"} speed={100}/>
                 </div>
                 <h1 className="customFont text-[10rem] md:text-[12rem] leading-tight mix-blend-difference text-[#DFDFF2] w-full items-start">TOP EVENTS</h1>
                 <DisplayGrid/>

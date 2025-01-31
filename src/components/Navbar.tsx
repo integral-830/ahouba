@@ -88,7 +88,7 @@ function Navbar() {
                     {
                         menuItems.map(((menuItem, index) => (
                             <Link to={menuItem.link} key={index} onClick={() => setIsOpen((open) => !open)}
-                                  className="group relative overflow-hidden px-8 py-3 text-3xl active:bg-[#DFDFF2] rounded-full after:absolute after:w-full after:h-full after:bg-[#DFDFF2] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:transition-all hover:after:ease-out hover:after:duration-200">
+                                  className="group relative overflow-hidden px-8 py-3 text-3xl active:bg-[#dfdff2] rounded-full after:absolute after:w-full after:h-full after:bg-[#dfdff2] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:transition-all hover:after:ease-out hover:after:duration-200">
                                 <div
                                     className="w-fit h-full no-underline relative z-10 text-[#DFDFF2] group-hover:text-[#A8A8D7] group-hover:no-underline group-hover:cursor-pointer">
                                     {menuItem.title}

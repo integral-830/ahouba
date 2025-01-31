@@ -1,6 +1,9 @@
+import ParticlesComponent from "../components/Particle.tsx";
+
 const DeveloperSection = () => {
     return (
-        <div className=" relative h-lvh w-screen overflow-hidden bg-[#a8a8d7] p-10 pt-36">
+        <div className=" relative h-lvh w-screen overflow-hidden p-10 pt-36">
+            <ParticlesComponent id="particles" />
             <div className="w-full h-full flex flex-col items-center">
                 <h1 className="font-coaster text-[5rem] lg:text-[10rem] text-[#dfdff2] w-full">Developer:--</h1>
                 <div className="w-full h-full flex items-center">

@@ -3,6 +3,7 @@ import {useGSAP} from "@gsap/react";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import ProfileCard from "../components/ProfileCard.tsx";
+import ParticlesComponent from "../components/Particle.tsx";
 
 interface organizerData {
     name: string;
@@ -319,8 +320,8 @@ const TeamSection = () => {
     })
 
     return (
-        <section ref={teamSection} className=" relative h-lvh w-screen overflow-hidden bg-[#a8a8d7]">
-
+        <section ref={teamSection} className=" relative h-lvh w-screen overflow-hidden">
+            <ParticlesComponent id="particles" />
             <div ref={teamHeader}
                  className="relative z-30 w-[1250vw] md:w-[750vw] lg:w-[400vw] h-full flex flex-col will-change-transform ">
                 <div className="absolute w-full h-full flex flex-col items-center p-36">

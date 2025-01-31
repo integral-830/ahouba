@@ -25,16 +25,16 @@ const Marquee = ({text, speed}: MarqueeProps) => {
         });
     }, []);
     return (
-        <div className="w-screen h-[20vh] relative blur bg-[#EDFF66] overflow-hidden">
+        <div className="w-screen h-[20vh] relative  bg-gradient-to-t from-gray-200 from-10% via-transparent to-gray-200 to-90% overflow-hidden">
             <div className="flex w-full items-center justify-center">
                 <h1 id="clipped-text" className="text-[12vh] px-10 uppercase text-black font-bold">{text}</h1>
-                <h1 className="text-[12vh] px-10 text-black uppercase font-bold">{text}</h1>
-                <h1 className="text-[12vh] px-10 text-black uppercase font-bold">{text}</h1>
-                <h1 className="text-[12vh] px-10 text-black uppercase font-bold">{text}</h1>
-                <h1 className="text-[12vh] px-10 text-black uppercase font-bold">{text}</h1>
-                <h1 className="text-[12vh] px-10 text-black uppercase font-bold">{text}</h1>
-                <h1 className="text-[12vh] px-10 text-black uppercase font-bold">{text}</h1>
-                <h1 className="text-[12vh] px-10 text-black uppercase font-bold">{text}</h1>
+                <h1 className="text-[12vh] px-10 text-[#DFDFF2] uppercase font-exwaye font-bold">{text}</h1>
+                <h1 className="text-[12vh] px-10 text-[#DFDFF2] uppercase font-exwaye font-bold">{text}</h1>
+                <h1 className="text-[12vh] px-10 text-[#DFDFF2] uppercase font-exwaye font-bold">{text}</h1>
+                <h1 className="text-[12vh] px-10 text-[#DFDFF2] uppercase font-exwaye font-bold">{text}</h1>
+                <h1 className="text-[12vh] px-10 text-[#DFDFF2] uppercase font-exwaye font-bold">{text}</h1>
+                <h1 className="text-[12vh] px-10 text-[#DFDFF2] uppercase font-exwaye font-bold">{text}</h1>
+                <h1 className="text-[12vh] px-10 text-[#DFDFF2] uppercase font-exwaye font-bold">{text}</h1>
             </div>
         </div>
     )
