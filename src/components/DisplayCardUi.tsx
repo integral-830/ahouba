@@ -7,7 +7,7 @@ interface Cardprops {
 const DisplayCardUi = ({title,description,image}:Cardprops) => {
     return (
         <div id="card" onClick={() => alert("Ayush")} className="relative w-[450px] h-4/5 overflow-hidden hover:scale-105 transition-all ease-in duration-300 rounded-3xl">
-            <div className="absolute w-full h-full bg-[#c4c4ed] blur(10px) opacity-95">
+            <div className="absolute w-full h-full bg-[#00FFC6] blur(10px) opacity-95">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 800" width="800" height="800">
                     <g stroke="hsla(0, 0%, 74%, 1.00)" fill="none">
                         <rect width="40" height="1" x="-20" y="-0.5" stroke="none" fill="hsla(0, 0%, 74%, 1.00)"

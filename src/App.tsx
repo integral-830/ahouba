@@ -5,10 +5,10 @@ import Lenis from "lenis";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import HeroSection from "./sections/HeroSection.tsx";
-import MarqueeSection from "./sections/MarqueeSection.tsx";
-import HorizontalScroll from "./sections/HorizontalScroll.tsx";
+import Gallery from "./sections/Gallery.tsx";
 import DisplaySection from "./sections/DisplaySection.tsx";
 import SponsorSection from "./sections/SponsorSection.tsx";
+import AboutSection from "./sections/AboutSection.tsx";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -32,9 +32,10 @@ function App() {
     return (
         <div ref={containerRef} className="App w-screen min-h-lvh relative">
             <HeroSection/>
-            <MarqueeSection text={"AHOUBA"} speed={100}/>
-            <HorizontalScroll/>
+            {/*<MarqueeSection text={"AHOUBA"} speed={100}/>*/}
+            <AboutSection/>
             <DisplaySection/>
+            <Gallery/>
             <SponsorSection/>
         </div>
 

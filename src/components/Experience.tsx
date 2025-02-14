@@ -6,9 +6,9 @@ const Experience = () => {
 
     return (
         <>
-            <OrbitControls enableZoom={false}/>
-            <ambientLight intensity={0.5}/>
-            <directionalLight position={[0, 0, 5]} intensity={1.5} />
+            <OrbitControls enableZoom={false} autoRotate={true} enableDamping={true} makeDefault/>
+            <ambientLight intensity={1}/>
+            <directionalLight position={[0, 5, 5]} intensity={20} />
             <Suspense>
                 <Model/>
             </Suspense>

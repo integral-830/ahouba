@@ -137,7 +137,7 @@ const EventSection = () => {
     return (
         <section className="w-screen min-h-lvh pt-36 lg:px-20">
             <ParticlesComponent id="particles" />
-            <h1 className="font-coaster text-[5vw] text-start text-[#dfdff2] px-16 w-full">#Dawn-Of-Innovation</h1>
+            <h1 className="font-coaster text-[5vw] text-start text-[#00FFC6] px-16 w-full">#Dawn-Of-Innovation</h1>
             <div
                 className="w-full h-fit relative  flex flex-col md:flex-row gap-20 md:gap-4 lg:gap-20 p-4 sm:px-60 md:px-4 lg:px-20 ">
                 <div className="flex flex-col w-full gap-12">

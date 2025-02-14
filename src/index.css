@@ -8,6 +8,17 @@ body {
     width: 100dvw;
     overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 #particles canvas {
     position: absolute;
     top: 0;
@@ -62,6 +73,6 @@ body {
         @apply bg-black/95;
     }
     .hero-heading {
-        @apply uppercase font-zentry text-[#DFDFF2] text-7xl sm:text-[6rem] md:text-[10rem] lg:text-[16rem];
+        @apply uppercase font-zentry text-[#00FFC6] text-7xl sm:text-[6rem] md:text-[10rem] lg:text-[16rem];
     }
 }
