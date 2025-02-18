@@ -4,6 +4,7 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import ProfileCard from "../components/ProfileCard.tsx";
 import ParticlesComponent from "../components/Particle.tsx";
+import Transition from "../utility/Transition.tsx";
 
 interface organizerData {
     name: string;
@@ -325,8 +326,8 @@ const TeamSection = () => {
             <div ref={teamHeader}
                  className="relative z-30 w-[1250vw] md:w-[750vw] lg:w-[400vw] h-full flex flex-col will-change-transform ">
                 <div className="absolute w-full h-full flex flex-col items-center p-36">
-                    <h1 className="customFont text-[22vh] text-[#00FFC6] w-full">Tech--Team</h1>
-                    <h1 className="customFont text-[28vh] text-[#00FFC6] w-full h-full text-center">Bit-Busters</h1>
+                    <h1 className="customFont text-[22vh] text-[#00Ff88] w-full">Tech--Team</h1>
+                    <h1 className="customFont text-[28vh] text-[#00FF88] w-full h-full text-center">Bit-Busters</h1>
                 </div>
                 <div className="absolute w-full h-full flex flex-col will-change-transform">
                     <div className="h-full w-full flex items-center justify-around">
@@ -373,7 +374,7 @@ const TeamSection = () => {
                         }
                         <div className="w-fit">
                             <h1 id="hero-title"
-                                className="customFont text-[8vh] text-[#00FFC6]">/your-helping-hands</h1>
+                                className="customFont text-[8vh] text-[#00FF88]">/your-helping-hands</h1>
                         </div>
                     </div>
                 </div>
@@ -381,4 +382,4 @@ const TeamSection = () => {
         </section>
     )
 }
-export default TeamSection
+export default Transition(TeamSection)

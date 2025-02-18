@@ -594,7 +594,7 @@ class App {
     }
 
     onWheel() {
-        this.scroll.target += 2;
+        this.scroll.target += 1;
         this.onCheckDebounce();
     }
 

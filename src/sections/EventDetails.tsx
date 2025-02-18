@@ -3,6 +3,7 @@ import {GoArrowUpRight, GoClock} from "react-icons/go";
 import {IoLocationOutline} from "react-icons/io5";
 import {Link} from "react-router-dom";
 import ParticlesComponent from "../components/Particle.tsx";
+import Transition from "../utility/Transition.tsx";
 
 const EventDetails = () => {
     return (
@@ -75,4 +76,4 @@ const EventDetails = () => {
         </section>
     )
 }
-export default EventDetails
+export default Transition(EventDetails)

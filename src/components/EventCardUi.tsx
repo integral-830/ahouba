@@ -32,7 +32,7 @@ const EventCardUi = (props: EventCardUiProps) => {
                 </div>
                 <p className=" text-[1.4dvh] h-fit font-Roobert text-[#fee8e6] overflow-hidden">{description}</p>
                 <div className="w-full h-fit flex gap-4">
-                    <EventCardButton title="Explore" icon={<GoArrowUpRight className="z-10 stroke-1" color="#00FFC6"/>} link={`/ahouba/events/${title}`}/>
+                    <EventCardButton title="Explore" icon={<GoArrowUpRight className="z-10 stroke-1 group-hover:stroke-black" color="#00FFC6"/>} link={`/ahouba/events/${title}`}/>
                 </div>
             </div>
         </div>

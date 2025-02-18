@@ -1,12 +1,12 @@
 import { Typewriter } from 'react-simple-typewriter'
 
-const typeWriter = () => {
+const TypeWriter = () => {
     return (
-        <div className='w-full '>
-            <h1 className="customFont uppercase font-zentry text-[#DFDFF2] text-4xl md:text-7xl lg:text-[7rem]">
-                <span style={{color: '#9fdfbb', fontWeight: 'bold'}}>
+        <div className='w-fit '>
+            <h1 className="customFont uppercase font-zentry text-[#00FFC6] text-4xl md:text-7xl lg:text-[9rem]">
+                <span style={{color: '#00FFC6', fontWeight: 'bold'}}>
                     <Typewriter
-                        words={['Code', 'Conquer', 'Celebrate !']}
+                        words={['2.0']}
                         loop={0}
                         cursor
                         cursorStyle='_'
@@ -19,4 +19,4 @@ const typeWriter = () => {
         </div>
     )
 }
-export default typeWriter
+export default TypeWriter

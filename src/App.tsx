@@ -1,44 +1,40 @@
 import './App.css'
 import 'lenis/dist/lenis.css'
-import {useEffect, useRef} from "react";
-import Lenis from "lenis";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
-import HeroSection from "./sections/HeroSection.tsx";
-import Gallery from "./sections/Gallery.tsx";
-import DisplaySection from "./sections/DisplaySection.tsx";
-import SponsorSection from "./sections/SponsorSection.tsx";
-import AboutSection from "./sections/AboutSection.tsx";
+import Navbar from "./components/Navbar.tsx";
+import Cursor from "./components/Cursor.tsx";
+import {Route, Routes} from "react-router";
+import EventSection from "./sections/EventSection.tsx";
+import EventDetails from "./sections/EventDetails.tsx";
+import TeamSection from "./sections/TeamSection.tsx";
+import DeveloperSection from "./sections/DeveloperSection.tsx";
+import {useLocation} from "react-router-dom";
+import LandingSection from "./sections/LandingSection.tsx";
+import {AnimatePresence} from "framer-motion";
+import ScrollToTop from "./components/ScrollToTop.tsx";
 
 gsap.registerPlugin(ScrollTrigger)
 
 function App() {
-    const containerRef = useRef(null)
-    useEffect(() => {
-        const lenis = new Lenis();
-        lenis.on('scroll', ScrollTrigger.update);
-        gsap.ticker.add((time) => {
-            lenis.raf(time * 1000);
-        });
-        gsap.ticker.lagSmoothing(0);
+    const location = useLocation();
 
-        function updateTime(time: number) {
-            lenis.raf(time);
-            requestAnimationFrame(updateTime)
-        }
-
-        requestAnimationFrame(updateTime);
-    })
     return (
-        <div ref={containerRef} className="App w-screen min-h-lvh relative">
-            <HeroSection/>
-            {/*<MarqueeSection text={"AHOUBA"} speed={100}/>*/}
-            <AboutSection/>
-            <DisplaySection/>
-            <Gallery/>
-            <SponsorSection/>
-        </div>
-
+        <>
+            <Navbar/>
+            <Cursor/>
+            <ScrollToTop>
+                <AnimatePresence mode="wait">
+                    <Routes location={location} key={location.pathname}>
+                        <Route path="/ahouba/*" element={<LandingSection/>}/>
+                        <Route path="/ahouba/events" element={<EventSection/>}/>
+                        <Route path="/ahouba/events/:eventName" element={<EventDetails/>}/>
+                        <Route path="/ahouba/team" element={<TeamSection/>}/>
+                        <Route path="/ahouba/developer" element={<DeveloperSection/>}/>
+                    </Routes>
+                </AnimatePresence>
+            </ScrollToTop>
+        </>
     )
 }
 

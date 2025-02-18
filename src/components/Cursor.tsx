@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import {useEffect} from "react";
+import cursor from "../assets/images/cursor.png"
 
 const Cursor = () => {
     useEffect(()=>{
@@ -19,7 +20,9 @@ const Cursor = () => {
         }
     })
     return (
-        <div id="cursor" className="fixed top-0 left-0 h-[30px] w-[30px] mix-blend-difference pointer-events-none border-4 border-[#DFDFF2] rounded-full z-50 "></div>
+        <div id="cursor" className="fixed top-0 left-0 h-[40px] w-[40px] pointer-events-none rounded-full z-[100] ">
+            <img src={cursor} alt="Cursor" className="h-full w-full" />
+        </div>
     )
 }
 export default Cursor

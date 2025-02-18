@@ -1,5 +1,6 @@
 import ParticlesComponent from "../components/Particle.tsx";
 import PixelTransition from "../components/PixelTransition.tsx";
+import Transition from "../utility/Transition.tsx";
 
 const DeveloperSection = () => {
     return (
@@ -59,4 +60,4 @@ const DeveloperSection = () => {
         </div>
     )
 }
-export default DeveloperSection
+export default Transition(DeveloperSection)

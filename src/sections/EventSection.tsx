@@ -1,6 +1,7 @@
 import EventCardUi from "../components/EventCardUi.tsx";
 import TiltEffect from "../utility/TiltEffect.tsx";
 import ParticlesComponent from "../components/Particle.tsx";
+import Transition from "../utility/Transition.tsx";
 
 interface event {
     id: number;
@@ -186,4 +187,4 @@ const EventSection = () => {
         </section>
     )
 }
-export default EventSection
+export default Transition(EventSection)

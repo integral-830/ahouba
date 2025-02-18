@@ -1,4 +1,3 @@
-import Deer from "../assets/images/navDeer.svg"
 import {Link} from "react-router-dom";
 import {useEffect, useRef, useState} from "react";
 import {useWindowScroll} from "react-use";
@@ -74,7 +73,7 @@ function Navbar() {
         <div ref={navRef}
              className="fixed top-0 left-0 z-30 w-full flex items-center justify-between align-middle px-7 lg:px-32">
             <div className="w-full flex items-center justify-between">
-                <img onClick={()=>{ navigate("/ahouba/")} } className="h-[70px] w-[70px] hover:scale-125 transition-all ease-in duration-300" src={Deer}
+                <img onClick={()=>{ navigate("/ahouba/")} } className="h-[60px] w-[60px] hover:scale-125 transition-all ease-in duration-300" src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ahoubaLogo.svg"
                      alt="icon"/>
                 <div className="h-[35px] w-[40px] relative mx-3 md:hidden">
                     {!isOpen ?
@@ -105,9 +104,9 @@ function Navbar() {
 
                     menuItems.map(((menuItem, index) => (
                         <Link to={menuItem.link} key={index}
-                              className="group relative overflow-hidden px-8 py-3 rounded-full border-[#00FFC6] border text-3xl after:absolute after:w-full after:h-full after:bg-[#00FFC6] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:rounded hover:after:transition-all hover:after:ease-out hover:after:duration-200">
+                              className="group relative overflow-hidden px-8 py-3 rounded-full border-[#00FFC6] border-2 text-3xl after:absolute after:w-full after:h-full after:bg-[#00FFC6] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:rounded hover:after:transition-all hover:after:ease-out hover:after:duration-200">
                             <div
-                                className="w-full h-full no-underline relative z-10 text-[#00FFC6] group-hover:text-[#A8A8D7] group-hover:no-underline group-hover:cursor-pointer">
+                                className="w-full h-full no-underline relative z-10 text-[#00FFC6] group-hover:text-black group-hover:no-underline group-hover:cursor-pointer">
                                 {menuItem.title}
                             </div>
                         </Link>
