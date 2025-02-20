@@ -25,7 +25,7 @@ const FormDialog = ({open,setOpen,survey}:{open:boolean,setOpen:(open: any)=>voi
                                     <DialogTitle as="h3" className="text-3xl font-semibold text-white text-center">
                                         Complete Your Registration !
                                     </DialogTitle>
-                                    <div className="mt-2 relative h-[60vh] overflow-y-auto border-2 overflow-x-auto border-blue-400 rounded-2xl">
+                                    <div className="mt-2 relative h-[60vh] overflow-y-scroll border-2 overflow-x-scroll border-blue-400 rounded-2xl">
                                         <Survey model={survey} />
                                     </div>
                                 </div>
