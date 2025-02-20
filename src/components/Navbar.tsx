@@ -65,6 +65,7 @@ function Navbar() {
     const menuItems: Array<MenuItem> = [
         {title: "Home", link: "/ahouba/"},
         {title: "Events", link: "/ahouba/events"},
+        {title: "Sponsor", link: "/ahouba/sponsor"},
         {title: "Team", link: "/ahouba/team"},
         {title: "Developer", link: "/ahouba/developer"},
     ]

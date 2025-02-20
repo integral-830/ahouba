@@ -373,8 +373,7 @@ const TeamPage = () => {
                         )
                         }
                         <div className="w-fit">
-                            <h1 id="hero-title"
-                                className="customFont text-[8vh] text-[#00FF88]">/your-helping-hands</h1>
+                            <h1 className="customFont text-[8vh] text-[#00FF88]">/your-helping-hands</h1>
                         </div>
                     </div>
                 </div>
