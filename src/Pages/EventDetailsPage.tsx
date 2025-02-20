@@ -150,7 +150,7 @@ const surveyJson = {
     ]
 };
 
-function saveSurveyResults(url:string, json:any) {
+function saveSurveyResults() {
     // fetch(url, {
     //     method: 'POST',
     //     headers: {
@@ -176,14 +176,11 @@ const EventDetailsPage = () => {
     const [open, setOpen] = useState(false)
     const survey = new Model(surveyJson);
     survey.applyTheme(BorderlessLightPanelless);
-    const surveyComplete = useCallback((survey: { setValue: (arg0: string, arg1: string) => void; data: any; }) => {
+    const surveyComplete = useCallback((survey: { setValue: (arg0: string, arg1: string) => void; data: unknown; }) => {
         const userId = "asdfgfjh"
             survey.setValue("userId", userId);
 
-        saveSurveyResults(
-            "https://your-web-service.com/",
-            survey.data
-        )
+        saveSurveyResults()
     }, []);
 
     survey.onComplete.add(surveyComplete);
