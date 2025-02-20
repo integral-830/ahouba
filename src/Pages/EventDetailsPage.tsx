@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 import ParticlesComponent from "../components/Particle.tsx";
 import Transition from "../utility/Transition.tsx";
 
-const EventDetails = () => {
+const EventDetailsPage = () => {
     return (
         <section className=" relative min-h-lvh w-screen overflow-hidden p-20">
             <ParticlesComponent id="particles" />
@@ -76,4 +76,4 @@ const EventDetails = () => {
         </section>
     )
 }
-export default Transition(EventDetails)
+export default Transition(EventDetailsPage)

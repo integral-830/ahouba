@@ -1,15 +1,15 @@
-import HeroSection from "./HeroSection.tsx";
-import AboutSection from "./AboutSection.tsx";
-import DisplaySection from "./DisplaySection.tsx";
-import Gallery from "./Gallery.tsx";
-import SponsorSection from "./SponsorSection.tsx";
+import HeroSection from "../sections/HeroSection.tsx";
+import AboutSection from "../sections/AboutSection.tsx";
+import DisplaySection from "../sections/DisplaySection.tsx";
+import Gallery from "../sections/Gallery.tsx";
+import SponsorSection from "../sections/SponsorSection.tsx";
 import {useEffect, useRef} from "react";
 import Lenis from "lenis";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import Transition from "../utility/Transition.tsx";
 
-const LandingSection = () => {
+const LandingPage = () => {
     const containerRef = useRef(null)
     useEffect(() => {
         const lenis = new Lenis();
@@ -37,4 +37,4 @@ const LandingSection = () => {
         </div>
     )
 }
-export default Transition(LandingSection)
+export default Transition(LandingPage)

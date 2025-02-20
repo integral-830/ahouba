@@ -292,7 +292,7 @@ const organizerData: Array<organizerData> = [
 
 gsap.registerPlugin(ScrollTrigger)
 
-const TeamSection = () => {
+const TeamPage = () => {
     const teamSection = useRef(null);
     const teamHeader = useRef<HTMLDivElement | null>(null);
     const stickyHeight = window.innerHeight * 5;
@@ -382,4 +382,4 @@ const TeamSection = () => {
         </section>
     )
 }
-export default Transition(TeamSection)
+export default Transition(TeamPage)

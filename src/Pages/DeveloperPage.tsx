@@ -2,7 +2,7 @@ import ParticlesComponent from "../components/Particle.tsx";
 import PixelTransition from "../components/PixelTransition.tsx";
 import Transition from "../utility/Transition.tsx";
 
-const DeveloperSection = () => {
+const DeveloperPage = () => {
     return (
         <div className=" relative h-lvh w-screen overflow-hidden p-10 pt-36">
             <ParticlesComponent id="particles" />
@@ -60,4 +60,4 @@ const DeveloperSection = () => {
         </div>
     )
 }
-export default Transition(DeveloperSection)
+export default Transition(DeveloperPage)

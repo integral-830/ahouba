@@ -134,7 +134,7 @@ const events: Array<event> = [
 
 ]
 
-const EventSection = () => {
+const EventPage = () => {
     return (
         <section className="w-screen min-h-lvh pt-36 lg:px-20">
             <ParticlesComponent id="particles" />
@@ -187,4 +187,4 @@ const EventSection = () => {
         </section>
     )
 }
-export default Transition(EventSection)
+export default Transition(EventPage)

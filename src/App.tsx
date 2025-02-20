@@ -5,12 +5,12 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 import Navbar from "./components/Navbar.tsx";
 import Cursor from "./components/Cursor.tsx";
 import {Route, Routes} from "react-router";
-import EventSection from "./sections/EventSection.tsx";
-import EventDetails from "./sections/EventDetails.tsx";
-import TeamSection from "./sections/TeamSection.tsx";
-import DeveloperSection from "./sections/DeveloperSection.tsx";
+import EventPage from "./Pages/EventPage.tsx";
+import EventDetailsPage from "./Pages/EventDetailsPage.tsx";
+import TeamPage from "./Pages/TeamPage.tsx";
+import DeveloperPage from "./Pages/DeveloperPage.tsx";
 import {useLocation} from "react-router-dom";
-import LandingSection from "./sections/LandingSection.tsx";
+import LandingPage from "./Pages/LandingPage.tsx";
 import {AnimatePresence} from "framer-motion";
 import ScrollToTop from "./components/ScrollToTop.tsx";
 
@@ -26,11 +26,11 @@ function App() {
             <ScrollToTop>
                 <AnimatePresence mode="wait">
                     <Routes location={location} key={location.pathname}>
-                        <Route path="/ahouba/*" element={<LandingSection/>}/>
-                        <Route path="/ahouba/events" element={<EventSection/>}/>
-                        <Route path="/ahouba/events/:eventName" element={<EventDetails/>}/>
-                        <Route path="/ahouba/team" element={<TeamSection/>}/>
-                        <Route path="/ahouba/developer" element={<DeveloperSection/>}/>
+                        <Route path="/ahouba/*" element={<LandingPage/>}/>
+                        <Route path="/ahouba/events" element={<EventPage/>}/>
+                        <Route path="/ahouba/events/:eventName" element={<EventDetailsPage/>}/>
+                        <Route path="/ahouba/team" element={<TeamPage/>}/>
+                        <Route path="/ahouba/developer" element={<DeveloperPage/>}/>
                     </Routes>
                 </AnimatePresence>
             </ScrollToTop>
