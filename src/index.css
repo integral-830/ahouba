@@ -93,6 +93,9 @@ body {
         font-family: 'coaster';
         src: url('/public/fonts/Coaster Simone.ttf');
     }
+  :root {
+        --radius: 0.5rem;
+    }
 }
 
 @layer utilities {

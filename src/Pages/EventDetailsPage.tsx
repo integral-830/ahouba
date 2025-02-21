@@ -4,10 +4,11 @@ import {IoLocationOutline} from "react-icons/io5";
 import {Link} from "react-router-dom";
 import ParticlesComponent from "../components/Particle.tsx";
 import Transition from "../utility/Transition.tsx";
-import {useCallback, useState} from "react";
-import {Model} from "survey-react-ui";
-import FormDialog from "../components/FormDialog.tsx";
+import {useCallback} from "react";
+import {Model, Survey} from "survey-react-ui";
+import 'survey-core/defaultV2.min.css';
 import {BorderlessLightPanelless} from "survey-core/themes"
+import {Sheet, SheetClose, SheetContent, SheetFooter, SheetTrigger} from "@/components/ui/sheet.tsx";
 
 const surveyJson = {
     "title": "AHOUBA E-BLITZ",
@@ -173,7 +174,6 @@ function saveSurveyResults() {
 
 const EventDetailsPage = () => {
 
-    const [open, setOpen] = useState(false)
     const survey = new Model(surveyJson);
     survey.applyTheme(BorderlessLightPanelless);
     const surveyComplete = useCallback((survey: { setValue: (arg0: string, arg1: string) => void; data: unknown; }) => {
@@ -235,13 +235,30 @@ const EventDetailsPage = () => {
 
 
                     <div className="w-full h-fit flex gap-4">
-                        <div onClick={() => setOpen((open)=>!open)}
-                            className="group flex gap-4 items-center relative overflow-hidden px-8 py-3 rounded-full w-fit h-fit border-[#00FFC6] border text-3xl after:absolute after:w-full after:h-full after:bg-[#00FFC6] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:rounded hover:after:transition-all hover:after:ease-out hover:after:duration-200">
-                            <h1 className=" no-underline relative z-10 text-[#00FFC6] font-Roobert group-hover:text-black group-hover:no-underline group-hover:cursor-pointer">
-                                Register
-                            </h1>
-                            <GoArrowUpRight className="z-10 stroke-1 stroke-[#00FFC6]"/>
-                        </div>
+                        <Sheet key="top">
+                            <SheetTrigger asChild>
+                                <div className="group flex gap-4 items-center relative overflow-hidden px-8 py-3 rounded-full w-fit h-fit border-[#00FFC6] border text-3xl after:absolute after:w-full after:h-full after:bg-[#00FFC6] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:rounded hover:after:transition-all hover:after:ease-out hover:after:duration-200">
+                                    <h1 className=" no-underline relative z-10 text-[#00FFC6] font-Roobert group-hover:text-black group-hover:no-underline group-hover:cursor-pointer">
+                                        Register
+                                    </h1>
+                                    <GoArrowUpRight className="z-10 stroke-1 stroke-[#00FFC6]"/>
+                                </div>
+                            </SheetTrigger>
+                            <SheetContent side="top" className="w-full bg-transparent">
+                                <div className="h-[80vh] overflow-auto rounded-3xl m-10">
+                                    <Survey model={survey} />
+                                </div>
+                                <SheetFooter>
+                                    <SheetClose asChild>
+                                        <div className="group items-center relative overflow-hidden px-8 py-3 rounded-full w-fit h-fit bg-red-500 border-red-600 border text-3xl">
+                                            <h1 className=" no-underline relative text-white font-Roobert group-hover:no-underline group-hover:cursor-pointer">
+                                                Close
+                                            </h1>
+                                        </div>
+                                    </SheetClose>
+                                </SheetFooter>
+                            </SheetContent>
+                        </Sheet>
                         <Link to={""}
                             className="group flex gap-4 items-center relative overflow-hidden px-8 py-3 rounded-full w-fit h-fit border-[#00FFC6] border text-3xl after:absolute after:w-full after:h-full after:bg-[#00FFC6] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:rounded hover:after:transition-all hover:after:ease-out hover:after:duration-200">
                             <h1 className=" no-underline relative z-10 text-[#00FFC6] font-Roobert group-hover:text-black group-hover:no-underline group-hover:cursor-pointer">
@@ -252,7 +269,6 @@ const EventDetailsPage = () => {
                     </div>
                 </div>
             </div>
-            <FormDialog open={open} setOpen={setOpen} survey={survey}/>
         </section>
     )
 }
