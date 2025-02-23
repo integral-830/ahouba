@@ -10,7 +10,9 @@ import gsap from "gsap";
 import Transition from "../utility/Transition.tsx";
 
 const LandingPage = () => {
+
     const containerRef = useRef(null)
+
     useEffect(() => {
         const lenis = new Lenis();
         lenis.on('scroll', ScrollTrigger.update);
@@ -28,13 +30,15 @@ const LandingPage = () => {
     })
 
     return (
-        <div ref={containerRef} className="App w-screen min-h-lvh relative">
-            <HeroSection/>
-            <AboutSection/>
-            <DisplaySection/>
-            <Gallery/>
-            <SponsorSection/>
-        </div>
+        <section ref={containerRef} className="App w-screen min-h-lvh relative">
+            <div className="absolute">
+                <HeroSection/>
+                <AboutSection/>
+                <DisplaySection/>
+                <Gallery/>
+                <SponsorSection/>
+            </div>
+        </section>
     )
 }
 export default Transition(LandingPage)

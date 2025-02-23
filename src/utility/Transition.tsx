@@ -1,4 +1,5 @@
 import {motion} from 'framer-motion';
+import typo from "../assets/images/typo.svg"
 
 const Transition = (Children: any) => {
     return () => (
@@ -10,10 +11,9 @@ const Transition = (Children: any) => {
                         exit={{scaleY: 1}}
                         transition={{duration: 1.5, ease: [0.22, 1, 0.36, 1]}}
             >
-                <div className="w-full h-full flex flex-col flex-center gap-10 bg-[#008063]">
-                    <img className="h-[150px] w-[150px] md:w-[200px] md:h-[200px] object-cover hover:scale-105"
-                         src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ahoubaLogo.svg" alt="icon"/>
-                    <h1 id="hero-title" className="customFont hero-heading">AHOUBA</h1>
+                <div className="w-full h-full flex flex-col flex-center bg-[#008063]">
+                    <img className="h-[250px] w-[250px] md:w-[350px] md:h-[350px] hover:scale-105"
+                         src={typo} alt="icon"/>
                 </div>
             </motion.div>
             <motion.div className="slide-out"
@@ -22,10 +22,9 @@ const Transition = (Children: any) => {
                         exit={{scaleY: 0}}
                         transition={{duration: 1.5, ease: [0.22, 1, 0.36, 1]}}
             >
-                <div className="w-full h-full flex flex-col flex-center gap-10 bg-[#008063]">
-                    <img className="h-[150px] w-[150px] md:w-[200px] md:h-[200px] object-cover hover:scale-105"
-                         src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ahoubaLogo.svg" alt="icon"/>
-                    <h1 id="hero-title" className="customFont hero-heading">AHOUBA</h1>
+                <div className="w-full h-full flex flex-col flex-center bg-[#008063]">
+                    <img className="h-[250px] w-[250px] md:w-[350px] md:h-[350px]  hover:scale-105"
+                         src={typo} alt="icon"/>
                 </div>
             </motion.div>
 

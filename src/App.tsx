@@ -14,28 +14,61 @@ import LandingPage from "./Pages/LandingPage.tsx";
 import {AnimatePresence} from "framer-motion";
 import ScrollToTop from "./utility/ScrollToTop.tsx";
 import SponsorPage from "./Pages/SponsorPage.tsx";
+import PreLoader from "./utility/PreLoader.tsx";
+import {useGSAP} from "@gsap/react";
+import {useEffect, useRef, useState} from "react";
 
 gsap.registerPlugin(ScrollTrigger)
 
 function App() {
+
     const location = useLocation();
+    const loaderRef = useRef(null)
+    const [boolean, setBoolean] = useState(true);
+    const updateCounter = () => {
+        setBoolean(false);
+    }
+
+    useEffect(() => {
+        const timer = setInterval(updateCounter, 5000);
+        return () => {
+            clearTimeout(timer);
+        }
+    });
+
+    useGSAP(() => {
+        gsap.to(loaderRef.current, {
+            y: -100,
+            delay: 5,
+            duration: 1,
+            opacity: 0,
+        })
+    })
 
     return (
         <>
             <Navbar/>
             <Cursor/>
-            <ScrollToTop>
-                <AnimatePresence mode="wait">
-                    <Routes location={location} key={location.pathname}>
-                        <Route path="/ahouba/*" element={<LandingPage/>}/>
-                        <Route path="/ahouba/events" element={<EventPage/>}/>
-                        <Route path="/ahouba/events/:eventName" element={<EventDetailsPage />}/>
-                        <Route path="/ahouba/team" element={<TeamPage/>}/>
-                        <Route path="/ahouba/sponsor" element={<SponsorPage/>}/>
-                        <Route path="/ahouba/developer" element={<DeveloperPage/>}/>
-                    </Routes>
-                </AnimatePresence>
-            </ScrollToTop>
+            {boolean ? (
+                <div ref={loaderRef} className="loader absolute z-[500] h-full w-full">
+                    <PreLoader/>
+                </div>
+            ) : (
+                <ScrollToTop>
+                    <AnimatePresence mode="wait">
+                        <Routes location={location} key={location.pathname}>
+                            <Route path="/ahouba/*" element={<LandingPage/>}/>
+                            <Route path="/ahouba/events" element={<EventPage/>}/>
+                            <Route path="/ahouba/events/:eventName" element={<EventDetailsPage/>}/>
+                            <Route path="/ahouba/team" element={<TeamPage/>}/>
+                            <Route path="/ahouba/sponsor" element={<SponsorPage/>}/>
+                            <Route path="/ahouba/developer" element={<DeveloperPage/>}/>
+                        </Routes>
+                    </AnimatePresence>
+                </ScrollToTop>
+            )}
+
+
         </>
     )
 }
