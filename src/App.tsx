@@ -12,7 +12,7 @@ import DeveloperPage from "./Pages/DeveloperPage.tsx";
 import {useLocation} from "react-router-dom";
 import LandingPage from "./Pages/LandingPage.tsx";
 import {AnimatePresence} from "framer-motion";
-import ScrollToTop from "./components/ScrollToTop.tsx";
+import ScrollToTop from "./utility/ScrollToTop.tsx";
 import SponsorPage from "./Pages/SponsorPage.tsx";
 
 gsap.registerPlugin(ScrollTrigger)
@@ -29,7 +29,7 @@ function App() {
                     <Routes location={location} key={location.pathname}>
                         <Route path="/ahouba/*" element={<LandingPage/>}/>
                         <Route path="/ahouba/events" element={<EventPage/>}/>
-                        <Route path="/ahouba/events/:eventName" element={<EventDetailsPage/>}/>
+                        <Route path="/ahouba/events/:eventName" element={<EventDetailsPage />}/>
                         <Route path="/ahouba/team" element={<TeamPage/>}/>
                         <Route path="/ahouba/sponsor" element={<SponsorPage/>}/>
                         <Route path="/ahouba/developer" element={<DeveloperPage/>}/>
