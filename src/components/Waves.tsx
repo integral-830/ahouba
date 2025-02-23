@@ -4,12 +4,9 @@ import React, {useRef, useEffect} from "react";
 class Grad {
     private x: number;
     private y: number;
-    private z: number;
-
-    constructor(x: number, y: number, z: number) {
+    constructor(x: number, y: number) {
         this.x = x;
         this.y = y;
-        this.z = z;
     }
 
     dot2(x: number, y: number): number {
@@ -26,9 +23,9 @@ class Noise {
 
     constructor(seed = 0) {
         this.grad3 = [
-            new Grad(1, 1, 0), new Grad(-1, 1, 0), new Grad(1, -1, 0), new Grad(-1, -1, 0),
-            new Grad(1, 0, 1), new Grad(-1, 0, 1), new Grad(1, 0, -1), new Grad(-1, 0, -1),
-            new Grad(0, 1, 1), new Grad(0, -1, 1), new Grad(0, 1, -1), new Grad(0, -1, -1)
+            new Grad(1, 1), new Grad(-1, 1), new Grad(1, -1), new Grad(-1, -1),
+            new Grad(1, 0), new Grad(-1, 0), new Grad(1, 0), new Grad(-1, 0),
+            new Grad(0, 1), new Grad(0, -1), new Grad(0, 1), new Grad(0, -1)
         ];
         this.p = [151, 160, 137, 91, 90, 15, 131, 13, 201, 95, 96, 53, 194, 233, 7, 225, 140, 36, 103, 30,
             69, 142, 8, 99, 37, 240, 21, 10, 23, 190, 6, 148, 247, 120, 234, 75, 0, 26, 197, 62, 94, 252, 219,
