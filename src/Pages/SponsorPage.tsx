@@ -1,5 +1,5 @@
 import SpotlightCard from "../components/SpotlightCard.tsx";
-import ParticlesComponent from "../components/Particle.tsx";
+import ParticlesComponent from "../utility/Particle.tsx";
 import Transition from "../utility/Transition.tsx";
 
 interface Sponsor {

@@ -1,5 +1,5 @@
 import Hero from "../components/Hero.tsx";
-import ParticlesComponent from "../components/Particle.tsx";
+import ParticlesComponent from "../utility/Particle.tsx";
 
 function HeroSection() {
 

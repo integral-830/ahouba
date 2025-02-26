@@ -3,7 +3,7 @@ import {useGSAP} from "@gsap/react";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import ProfileCard from "../components/ProfileCard.tsx";
-import ParticlesComponent from "../components/Particle.tsx";
+import ParticlesComponent from "../utility/Particle.tsx";
 import Transition from "../utility/Transition.tsx";
 
 interface organizerData {

@@ -16,7 +16,7 @@ interface EventCardUiProps {
 }
 
 const EventCardUi = (props: EventCardUiProps) => {
-    const {title, description, image, date, time, location} = props;
+    const {id, title, description, image, date, time, location} = props;
     return (
         <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
             <div
@@ -27,7 +27,7 @@ const EventCardUi = (props: EventCardUiProps) => {
                          alt="image"/>
                 </div>
                 <div className="w-full h-fit rounded-2xl flex flex-col gap-4 overflow-hidden">
-                    <h1 className=" text-[5dvh] font-coaster text-[#00FFC6]">{title}</h1>
+                    <h1 className=" text-[4dvh] font-coaster text-[#00FFC6]">{title}</h1>
                     <div className=" flex w-full h-fit gap-6 justify-items-start overflow-hidden">
                         <InfoBadge icon={<LuCalendarFold size="15"/>} text={date}/>
                         <InfoBadge icon={<GoClock size="15"/>} text={time}/>
@@ -37,7 +37,7 @@ const EventCardUi = (props: EventCardUiProps) => {
                     <div className="w-full h-fit flex gap-4">
                         <EventCardButton title="Explore"
                                          icon={<GoArrowUpRight className="z-10 stroke-1 group-hover:stroke-black"
-                                                               color="#00FFC6"/>} link={`/ahouba/events/${title}`}/>
+                                                               color="#00FFC6"/>} link={`/ahouba/events/${title}?id=${encodeURIComponent(id)}`}/>
                     </div>
                 </div>
             </div>

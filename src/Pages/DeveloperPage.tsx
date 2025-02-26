@@ -1,4 +1,4 @@
-import ParticlesComponent from "../components/Particle.tsx";
+import ParticlesComponent from "../utility/Particle.tsx";
 import PixelTransition from "../components/PixelTransition.tsx";
 import Transition from "../utility/Transition.tsx";
 

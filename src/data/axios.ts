@@ -16,7 +16,7 @@ interface EventDetails {
 }
 
 interface EventResponse{
-    events: Array<EventDetails>;
+    event: EventDetails;
 }
 
 const client = axios.create({
@@ -24,14 +24,14 @@ const client = axios.create({
     timeout: 10000,
 });
 
-async function fetchEventDetails(): Promise<AxiosResponse<EventResponse, any>> {
-    return  await client.get<EventResponse>("event.json");
+async function fetchEventDetails(id: string): Promise<AxiosResponse<EventResponse>> {
+    return  await client.get<EventResponse>(`${id}.json`);
 }
 
-export const useFetchResponse = (): QueryObserverResult<EventResponse, any> => {
+export const useFetchResponse = (id: string): QueryObserverResult<EventResponse> => {
     return useQuery<EventResponse>({
         queryFn: async () => {
-            const { data } = await fetchEventDetails();
+            const { data } = await fetchEventDetails(id);
             return data;
         },
         queryKey: [ 'response' ]
