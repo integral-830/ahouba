@@ -29,16 +29,14 @@ const Hero = () => {
         <>
             <div className="w-full relative h-full flex flex-center">
                 <div className="w-[300px] h-[300px] absolute z-[-1] md:w-[500px] md:h-[500px] flex flex-col">
-                    <video
-                        src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/logoBg.mp4"
-                        loop
-                        muted
-                        autoPlay
+                    <img
+                        src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/logoBg.gif"
                         className="size-full object-cover object-center"
+                        alt="logoBg"
                     />
                 </div>
                 <div className="w-[200px] h-[200px] md:w-[400px] md:h-[400px] flex-center">
-                    <img className="h-[170px] w-[170px] object-cover hover:scale-105" src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ahoubaLogo.svg" alt="icon"/>
+                    <img className="h-[170px] w-[170px] object-cover" src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ahoubaLogo.svg" alt="icon"/>
                 </div>
             </div>
             <div id="h" className="w-screen absolute h-full flex  flex-col pt-40 p-10 items-center z-10">

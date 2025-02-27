@@ -12,11 +12,11 @@ interface EventCardUiProps {
     image: string;
     date: string;
     time: string;
-    location: string;
+    venue: string;
 }
 
 const EventCardUi = (props: EventCardUiProps) => {
-    const {id, title, description, image, date, time, location} = props;
+    const {id, title, description, image, date, time, venue} = props;
     return (
         <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
             <div
@@ -31,7 +31,7 @@ const EventCardUi = (props: EventCardUiProps) => {
                     <div className=" flex w-full h-fit gap-6 justify-items-start overflow-hidden">
                         <InfoBadge icon={<LuCalendarFold size="15"/>} text={date}/>
                         <InfoBadge icon={<GoClock size="15"/>} text={time}/>
-                        <InfoBadge icon={<IoLocationOutline size="15"/>} text={location}/>
+                        <InfoBadge icon={<IoLocationOutline size="15"/>} text={venue}/>
                     </div>
                     <p className=" text-[1.4dvh] h-fit font-Roobert text-[#fee8e6] overflow-hidden">{description}</p>
                     <div className="w-full h-fit flex gap-4">

@@ -1,10 +1,10 @@
 import {LuCalendarFold} from "react-icons/lu";
 import {GoArrowUpRight, GoClock} from "react-icons/go";
 import {IoLocationOutline} from "react-icons/io5";
-import {Link, useSearchParams} from "react-router-dom";
+import {useSearchParams} from "react-router-dom";
 import ParticlesComponent from "../utility/Particle.tsx";
 import Transition from "../utility/Transition.tsx";
-import {useFetchResponse} from "../data/axios.ts";
+import {useFetchEventDetails} from "../data/axios.ts";
 import EventLoading from "../components/EventLoading.tsx";
 import SpotlightCard from "../components/SpotlightCard.tsx";
 
@@ -12,15 +12,14 @@ const EventDetailsPage = () => {
 
     const [searchParams, _] = useSearchParams();
     const id = searchParams.get('id');
-    const {data: Response, isLoading, isError} = useFetchResponse(id || "");
-    const eventDetails = Response?.event
-    console.log(Response)
+    const {data: Response, isLoading, isError} = useFetchEventDetails();
+    const eventDetails = Response?.events.filter((item) => item.id.toString() === id)[0];
 
     return (
         <section className=" relative min-h-lvh w-screen flex flex-center overflow-hidden p-20">
             <ParticlesComponent id="particles"/>
             {
-                isLoading ? <EventLoading />
+                isLoading ? <EventLoading/>
                     : isError ?
                         <SpotlightCard>
                             <div className="w-full h-lvh flex flex-col flex-center gap-4">
@@ -30,7 +29,8 @@ const EventDetailsPage = () => {
                                     <span className="customFont hero-heading rotate-12">4</span>
                                 </div>
                                 <h1 id="hero-title"
-                                    className="customFont uppercase font-zentry text-[#00FFC6] text-6xl md:text-9xl lg:text-[10rem]">Not Found</h1>
+                                    className="customFont uppercase font-zentry text-[#00FFC6] text-6xl md:text-9xl lg:text-[10rem]">Not
+                                    Found</h1>
                             </div>
                         </SpotlightCard>
                         : (
@@ -40,7 +40,7 @@ const EventDetailsPage = () => {
                                     <div
                                         className="w-full lg:w-1/2 xl:w-1/3 h-[300px] md:h-1/2 lg:h-full rounded-3xl overflow-hidden">
                                         <img className="h-full w-full bg-cover"
-                                             src="https://plus.unsplash.com/premium_photo-1725408144734-fd60f47ccc72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                             src={eventDetails?.image}
                                              alt="image"/>
                                     </div>
                                     <div
@@ -99,23 +99,21 @@ const EventDetailsPage = () => {
                                                 className=" text-[3dvh] text-[#00FFC6] font-coaster">{eventDetails?.contact}</h1>
                                             </div>
                                         </div>
-
-
                                         <div className="w-full h-fit flex gap-4">
-                                            <Link to={""}
-                                                  className="group flex gap-4 items-center relative overflow-hidden px-8 py-3 rounded-full w-fit h-fit border-[#00FFC6] border text-3xl after:absolute after:w-full after:h-full after:bg-[#00FFC6] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:rounded hover:after:transition-all hover:after:ease-out hover:after:duration-200">
+                                            <a href={eventDetails?.regLink || ""} target="_blank"
+                                               className="group flex gap-4 items-center relative overflow-hidden px-8 py-3 rounded-full w-fit h-fit border-[#00FFC6] border text-3xl after:absolute after:w-full after:h-full after:bg-[#00FFC6] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:rounded hover:after:transition-all hover:after:ease-out hover:after:duration-200">
                                                 <h1 className=" no-underline relative z-10 text-[#00FFC6] font-Roobert group-hover:text-black group-hover:no-underline group-hover:cursor-pointer">
                                                     Register
                                                 </h1>
                                                 <GoArrowUpRight className="z-10 stroke-1 stroke-[#00FFC6]"/>
-                                            </Link>
-                                            <Link to={""}
-                                                  className="group flex gap-4 items-center relative overflow-hidden px-8 py-3 rounded-full w-fit h-fit border-[#00FFC6] border text-3xl after:absolute after:w-full after:h-full after:bg-[#00FFC6] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:rounded hover:after:transition-all hover:after:ease-out hover:after:duration-200">
+                                            </a>
+                                            <a href={eventDetails?.ruleBook || ""} target="_blank"
+                                               className="group flex gap-4 items-center relative overflow-hidden px-8 py-3 rounded-full w-fit h-fit border-[#00FFC6] border text-3xl after:absolute after:w-full after:h-full after:bg-[#00FFC6] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:rounded hover:after:transition-all hover:after:ease-out hover:after:duration-200">
                                                 <h1 className=" no-underline relative z-10 text-[#00FFC6] font-Roobert group-hover:text-black group-hover:no-underline group-hover:cursor-pointer">
                                                     Rulebook
                                                 </h1>
                                                 <GoArrowUpRight className="z-10 stroke-1 stroke-[#00FFC6]"/>
-                                            </Link>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

@@ -6,288 +6,169 @@ import ProfileCard from "../components/ProfileCard.tsx";
 import ParticlesComponent from "../utility/Particle.tsx";
 import Transition from "../utility/Transition.tsx";
 
-interface organizerData {
+interface memberData {
     name: string;
-    image: string;
-    position: string;
-    linkedin: string;
-    phone: string;
+    profile: string;
+    designation: string;
+    link: string;
+    contact: number;
 }
 
-const organizerData: Array<organizerData> = [
+const members: Array<memberData> = [
     {
-        name: "Alok",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Gen Tech Secretary",
-        linkedin: "#",
-        phone: "7417418837"
+        link: "https://www.linkedin.com/in/shivam-singh-21a8b9258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Shivam Kumar Singh",
+        contact: 7005627424,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/sks.jpg",
+        designation: "eSports Team"
     },
     {
-        name: "Aditi",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Joint Tech Secretary",
-        linkedin: "https://in.linkedin.com/in/aditi-vidyarthi-7a9b36253",
-        phone: "9026252723"
-    },
-    {
-        name: "Aaryan Kumar",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Joint Tech Technical",
-        linkedin: "https://www.linkedin.com/in/aaryankumarsinha?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        phone: "9528314394"
-    },
-    {
-        name: "NIDHI",
-        image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/nidhi.jpg",
-        position: "Account & Registration Head",
-        linkedin: "https://www.linkedin.com/in/nidhi-hk108",
-        phone: "9142348481"
-    },
-    {
-        name: "Shreedhar",
-        image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/shreedhar.jpg",
-        position: "Sponsorship & Tech Event lead",
-        linkedin: "https://in.linkedin.com/in/shreedhar-anand-23a699214",
-        phone: "9060749243"
-    },
-    {
-        name: "Shashwat  ",
-        image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/shashwat.jpg",
-        position: "Sponsorship & Tech team",
-        linkedin: "https://www.linkedin.com/in/shashwat-kumar-41a610245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        phone: "9708912332"
-    },
-    {
-        name: "Dnyandeep ",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Sponsorship & Tech team",
-        linkedin: "#",
-        phone: "8623959964"
-    },
-    {
-        name: "Anubhav",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Hackathon Event Organiser",
-        linkedin: "#",
-        phone: "7355122717"
-    },
-    {
-        name: "Deepanshu ",
-        image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/deepanshu.jpg",
-        position: "Sponsorship and Hackathon event",
-        linkedin: "https://www.linkedin.com/in/deepanshu-singh-gautam-422318258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        phone: "9936142546"
-    },
-    {
-        name: "Aman Ahmad",
-        image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/aman.jpg",
-        position: "Design lead",
-        linkedin: "https://www.linkedin.com/in/aman-ahmad",
-        phone: "6306823356"
-    },
-    {
-        name: "Ayush Pandey",
-        image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ayush.jpg",
-        position: "Esports Event Lead",
-        linkedin: "#",
-        phone: "9336779708"
-    },
-    {
-        name: "Chetan Pyasi",
-        image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/chetan.jpg",
-        position: "Sponsor team, hackathon team.",
-        linkedin: "https://www.linkedin.com/in/chetan-pyasi-956173256",
-        phone: "8618543784"
-    },
-    {
-        name: "Balkishan Bajpay",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "CP EVENT ORGANISER",
-        linkedin: "www.linkedin.com/in/balkishan-bajpay",
-        phone: "07877058098"
-    },
-    {
-        name: "Vishal Srinivasan",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "CP EVENT ORGANISER ",
-        linkedin: "https://www.linkedin.com/in/vishal-srinivasan-661ab5257",
-        phone: "8248910030"
-    },
-    {
-        name: "Ayush Ravi",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Event Lead",
-        linkedin: "https://www.linkedin.com/in/ayush-ravi-0b1249257",
-        phone: "7666539163"
-    },
-    {
-        name: " Sameer Reddy",
-        image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/sameer.jpg",
-        position: "Esports Team",
-        linkedin: "https://www.linkedin.com/in/sameerreddy213/",
-        phone: "9652877199"
-    },
-    {
-        name: "Trishansh Verma",
-        image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/trishansh.jpg",
-        position: "Poster designer",
-        linkedin: "https://www.linkedin.com/in/trishansh-verma-b22a09291",
-        phone: "9329750160"
-    },
-    {
-        name: "Yash Goswami",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Design team member",
-        linkedin: "#",
-        phone: "7850032749"
-    },
-    {
-        name: "Shivam singh",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Member of eSports Event",
-        linkedin: "#",
-        phone: "+917005627424"
-    },
-    {
-        name: "Piyush Prasad",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Poster design",
-        linkedin: "#",
-        phone: "9142396828"
-    },
-    {
-        name: "Aishwary Raj",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Designer, Video Editor",
-        linkedin: "#",
-        phone: "9984641146"
-    },
-    {
-        name: "Yogita Kumari",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Designing team poster designer",
-        linkedin: "https://www.linkedin.com/in/yogita-kumari-090277297",
-        phone: "7584041059"
-    },
-    {
-        name: "Prince Yadav",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Design team",
-        linkedin: "#",
-        phone: "9120409207"
-    },
-    {
-        name: "Rahul Sharma",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Design team",
-        linkedin: "https://www.linkedin.com/in/rahul-sharma-91b2bb2a3",
-        phone: "6396165371"
-    },
-    {
-        name: "Ritesh Singh",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "In Sponsorship team and member of volunteers",
-        linkedin: "https://www.linkedin.com/in/ritesh-singh-377b95255",
-        phone: "9161753661"
-    },
-    {
-        name: "Arvind Pathak",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Hackathon Event Organiser",
-        linkedin: "#",
-        phone: "9971647357"
-    },
-    {
-        name: "Shashi Bhushan",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Web support team",
-        linkedin: "https://www.linkedin.com/in/shashi-bhushan-kumar-796b53259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        phone: "7782899732"
-    },
-    {
-        name: "Ram Ashish Yadav",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Web support team",
-        linkedin: "https://www.linkedin.com/in/ram-ashish-yadav-851320282",
-        phone: "8318158744"
-    },
-    {
-        name: "Aryan kashyap",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "support team",
-        linkedin: "https://www.linkedin.com/in/aryan-kashyap-335a61257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        phone: "9973293999"
-    },
-    {
-        name: "Yash Dehariya",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Event lead for robo war and line follower",
-        linkedin: "https://www.linkedin.com/in/yash-dehariya-82b91b257",
-        phone: "6009312042"
-    },
-    {
-        name: "Aman Kumar",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Editing Team",
-        linkedin: "https://www.linkedin.com/in/aman-kumar-a21a94257",
-        phone: "9311209203"
-    },
-    {
-        name: "Ayush Kumar",
-        image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ayushK.jpg",
-        position: "Design and Media",
-        linkedin: "https://www.linkedin.com/in/ayush-kumar-792916257",
-        phone: "8239322263"
-    },
-    {
+        link: "https://www.linkedin.com/in/rahul-gogra-ba4135203",
         name: "Rahul Gogra",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: " Bug Bounty Event Organizer",
-        linkedin: "https://www.linkedin.com/in/rahul-gogra-ba4135203",
-        phone: "7976608292"
+        contact: 7976608292,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/rg.jpg",
+        designation: "Cyber security lead"
     },
     {
+        link: "https://www.linkedin.com/in/anurag-kar-769358326",
+        name: "ANURAG KAR",
+        contact: 8789253304,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ak.jpg",
+        designation: "Co - Lead, Cyber Security Club"
+    },
+    {
+        link: "https://www.linkedin.com/in/kushsharma20/",
+        name: "Kush Sharma",
+        contact: 9837635386,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ks.jpeg",
+        designation: "Management head"
+    },
+    {
+        link: "https://www.linkedin.com/in/aknoru",
+        name: "Rounak Prajapati",
+        contact: 9755618709,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/rp.jpg",
+        designation: "Designer and event coordinator , outreach handler"
+    },
+    {
+        link: "https://www.linkedin.com/in/yash-goswami-6a21a1331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Yash Goswami",
+        contact: 7850032749,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/yg.jpg",
+        designation: "Design Team Lead"
+    },
+    {
+        link: "https://www.linkedin.com/in/ayush-pandey-0b5a88254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Ayush Pandey",
+        contact: 9336779708,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ap.jpg",
+        designation: "eSports Lead"
+    },
+    {
+        link: "https://www.linkedin.com/in/arya-sharma-64b468302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        name: "Arya Sharma",
+        contact: 9588211314,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/as.jpeg",
+        designation: "PR team"
+    },
+    {
+        link: "https://www.linkedin.com/in/gautam-sharma-3b70b62a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Gautam Sharma",
+        contact: 9351731896,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/gs.jpg",
+        designation: "E sports pr team"
+    },
+    {
+        link: "https://www.linkedin.com/in/prabhasavvaru15?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Avvaru Naga Prabhas",
+        contact: 9398238042,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ap.webp",
+        designation: "Outreach co-lead"
+    },
+    {
+        link: "https://www.linkedin.com/in/akanksha-gupta-a9241028b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         name: "Akanksha Gupta",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Working and Support Team Member",
-        linkedin: "www.linkedin.com/in/akanksha-gupta-a9241028b",
-        phone: "9410152288"
+        contact: 9410152288,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ag.jpg",
+        designation: "Coordinator and Content Team Member"
     },
     {
-        name: "Alaukik Patel",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Sponsorship Team",
-        linkedin: "https://www.linkedin.com/in/alaukik-patel-614152257",
-        phone: "6386695484"
+        link: "https://www.linkedin.com/in/ayush-ravi-0b1249257",
+        name: "Ayush Ravi",
+        contact: 7666539163,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ar.jpg",
+        designation: "Event Manager (Club Co-lead)"
     },
     {
-        name: "Ashutosh Ranjan",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Sponsorship team",
-        linkedin: "https://www.linkedin.com/in/ashutosh-ranjan-558964248",
-        phone: "6200807526"
+        link: "linkedin.com/in/Aryan Singh",
+        name: "Aryan Singh",
+        contact: 9958667276,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/as.jpg",
+        designation: "Event Management"
     },
     {
-        name: "Anish Kumar",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Event lead (robo soccer)",
-        linkedin: "https://www.linkedin.com/in/anish-kumar-478389290/",
-        phone: "9905468566"
+        link: "www.linkedin.com/in/pabitra-biswas-8b3978257",
+        name: "PABITRA BISWAS",
+        contact: 9932335056,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/pb.jpg",
+        designation: "Event Manager"
     },
     {
-        name: "RUPAK BARMAN",
-        image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        position: "Event Head of Apex Arena Esports tournament",
-        linkedin: "linkedin.com/in/rupak-barman-286621303",
-        phone: "9593927778"
+        link: "https://www.linkedin.com/in/apoorva-singh-214882323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Apoorva singh",
+        contact: 9897537655,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/aps.jpg",
+        designation: "PR team member"
     },
     {
-        name: "Ankit Yadav",
-        image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ankit.jpg",
-        position: "Poster design team and volunteer",
-        linkedin: "https://www.linkedin.com/in/ankit-yadav-7a1624284",
-        phone: "8176064263"
+        link: "https://www.linkedin.com/in/madhav-kumar-1440a3250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "B.Madhav Kumar",
+        contact: 9392618213,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/mk.jpg",
+        designation: "Pr team lead"
     },
+    {
+        link: "https://www.linkedin.com/in/sambodh-gupta-2aa946284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Sambodh gupta",
+        contact: 9462580504,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/sg.jpg",
+        designation: "Sponsorship Team"
+    },
+    {
+        link: "https://www.linkedin.com/in/om-bharadwaj-916b802a5/",
+        name: "Om Bharadwaj",
+        contact: 6207803739,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ob.jpg-",
+        designation: "Co Lead Sponsorship Team"
+    },
+    {
+        link: "https://www.linkedin.com/in/deepak-kush-3a7a10257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Deepak",
+        contact: 9812510003,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/dk.jpg",
+        designation: "PR team Co. head"
+    },
+    {
+        link: "https://www.linkedin.com/in/harshit-mishra-b778b9219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Harshit Mishra",
+        contact: 9628492644,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/hm.jpg",
+        designation: "Design Team"
+    },
+    {
+        link: "https://www.linkedin.com/in/yogita-kumari-090277297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Yogita kumari",
+        contact: 7584041059,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/yk.jpg",
+        designation: "Design team"
+    },
+    {
+        link: "www.linkedin.com/in/rahulsharma2k4",
+        name: "Rahul Sharma",
+        contact: 6396165371,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/rs.jpg",
+        designation: "Design team"
+    }
 ];
 
 gsap.registerPlugin(ScrollTrigger)
@@ -332,10 +213,10 @@ const TeamPage = () => {
                 <div className="absolute w-full h-full flex flex-col will-change-transform">
                     <div className="h-full w-full flex items-center justify-around">
                         <div className="w-[50px]"></div>
-                        {organizerData.map((organizer, index) => {
+                        {members.map((organizer, index) => {
                                 if (index % 3 === 0) {
-                                    return (<ProfileCard name={organizer.name} key={index} contact={organizer.phone}
-                                                         image={organizer.image} position={organizer.position}/>
+                                    return (<ProfileCard name={organizer.name} key={index} contact={organizer.contact}
+                                                         image={organizer.profile} position={organizer.designation} link={organizer.link}/>
                                     )
                                 }
                             }
@@ -344,12 +225,12 @@ const TeamPage = () => {
                         <div className="w-[80px]"></div>
                     </div>
                     <div className="h-full w-full flex items-center justify-around">
-                        {organizerData.map((organizer, index) => {
+                        {members.map((organizer, index) => {
                                 if (index % 3 === 1) {
                                     return (
                                         <ProfileCard
-                                            name={organizer.name} key={index} contact={organizer.phone}
-                                            image={organizer.image} position={organizer.position}
+                                            name={organizer.name} key={index} contact={organizer.contact}
+                                            image={organizer.profile} position={organizer.designation} link={organizer.link}
                                         />
                                     )
                                 }
@@ -360,12 +241,12 @@ const TeamPage = () => {
                     </div>
                     <div className="h-full w-full flex items-center justify-around">
                         <div className="w-[200px]"></div>
-                        {organizerData.map((organizer, index) => {
+                        {members.map((organizer, index) => {
                                 if (index % 3 === 2) {
                                     return (
                                         <ProfileCard
-                                            name={organizer.name} key={index} contact={organizer.phone}
-                                            image={organizer.image} position={organizer.position}
+                                            name={organizer.name} key={index} contact={organizer.contact}
+                                            image={organizer.profile} position={organizer.designation} link={organizer.link}
                                         />
                                     )
                                 }

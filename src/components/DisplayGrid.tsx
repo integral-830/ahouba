@@ -1,5 +1,4 @@
 import TiltEffect from "../utility/TiltEffect.tsx";
-import DisplayCardVid from "./DisplayCardVid.tsx";
 import DisplayCardImg from "./DisplayCardImg.tsx";
 
 const DisplayGrid = () => {
@@ -7,8 +6,8 @@ const DisplayGrid = () => {
         <div className="grid lg:grid-cols-6 grid-rows-5 lg:grid-rows-12 w-full h-full lg:px-60 lg:pb-20 gap-4">
             <div className="lg:col-span-6 lg:row-span-4 rounded-3xl overflow-hidden">
                 <TiltEffect className="w-full h-full">
-                    <DisplayCardVid
-                        src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ideaVideo.mp4"
+                    <DisplayCardImg
+                        src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ideathon.gif"
                         title="IDEATHON"
                         description="Ideathon: Unleash your creativity, collaborate with like-minded innovators, and transform your ideas into groundbreaking solutions that make a real impact !"
                     />
@@ -16,8 +15,8 @@ const DisplayGrid = () => {
             </div>
             <div className="lg:col-span-3 lg:row-span-4 lg:row-start-5 lg:rounded-3xl overflow-hidden">
                 <TiltEffect className="w-full h-full">
-                    <DisplayCardVid
-                        src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/codehunt.mp4"
+                    <DisplayCardImg
+                        src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/codehunt.gif"
                         title="CODEHUNT"
                         description="CodeHunt: Challenge your skills, compete for glory, and sharpen your coding abilities !"
                     />

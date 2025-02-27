@@ -13,25 +13,27 @@ interface EventDetails {
     fee: string;
     organiser: string;
     contact: string;
+    "regLink":string;
+    "ruleBook":string
 }
 
 interface EventResponse{
-    event: EventDetails;
+    events: Array<EventDetails>;
 }
 
 const client = axios.create({
-    baseURL: 'https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev',
+    baseURL: 'https://sg-01-api.jsonsilo.com',
     timeout: 10000,
 });
 
-async function fetchEventDetails(id: string): Promise<AxiosResponse<EventResponse>> {
-    return  await client.get<EventResponse>(`${id}.json`);
+async function fetchEventDetails(): Promise<AxiosResponse<EventResponse>> {
+    return  await client.get<EventResponse>("/public/91774280-2d37-4eb0-a008-81523e56a974");
 }
 
-export const useFetchResponse = (id: string): QueryObserverResult<EventResponse> => {
+export const useFetchEventDetails = (): QueryObserverResult<EventResponse> => {
     return useQuery<EventResponse>({
         queryFn: async () => {
-            const { data } = await fetchEventDetails(id);
+            const { data } = await fetchEventDetails();
             return data;
         },
         queryKey: [ 'response' ]
