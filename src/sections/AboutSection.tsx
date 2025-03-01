@@ -15,11 +15,8 @@ const AboutSection = () => {
                 <h1 className="customFont uppercase font-zentry text-[#00FFC6] text-3xl md:text-5xl lg:text-[7rem] text-center">About
                     - Ahouba ' 25 –Ultimate Tech Carnival!</h1>
                 <div className="w-full h-full flex flex-col lg:flex-row items-center justify-evenly">
-                    <video
-                        src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/bgVideo.mp4"
-                        loop
-                        muted
-                        autoPlay
+                    <img
+                        src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/mask.gif"
                         className=" massk w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[500px] lg:h-[500px] object-cover object-center"
                     />
                     <p className="p-10 text-[#00FFC6] text-[1.5vh] lg:text-[2.3vh] text-center max-w-screen-lg w-full ">
