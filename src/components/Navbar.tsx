@@ -63,11 +63,11 @@ function Navbar() {
     }, [isOpen]);
 
     const menuItems: Array<MenuItem> = [
-        {title: "Home", link: "/ahouba/"},
-        {title: "Events", link: "/ahouba/events"},
-        {title: "Sponsor", link: "/ahouba/sponsor"},
-        {title: "Team", link: "/ahouba/team"},
-        {title: "Developer", link: "/ahouba/developer"},
+        {title: "Home", link: "/"},
+        {title: "Events", link: "/events"},
+        {title: "Sponsor", link: "/sponsor"},
+        {title: "Team", link: "/team"},
+        {title: "Developer", link: "/developer"},
     ]
 
     return (

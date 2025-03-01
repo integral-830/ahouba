@@ -57,12 +57,12 @@ function App() {
                 <ScrollToTop>
                     <AnimatePresence mode="wait">
                         <Routes location={location} key={location.pathname}>
-                            <Route path="/ahouba/*" element={<LandingPage/>}/>
-                            <Route path="/ahouba/events" element={<EventPage/>}/>
-                            <Route path="/ahouba/events/:eventName" element={<EventDetailsPage/>}/>
-                            <Route path="/ahouba/team" element={<TeamPage/>}/>
-                            <Route path="/ahouba/sponsor" element={<SponsorPage/>}/>
-                            <Route path="/ahouba/developer" element={<DeveloperPage/>}/>
+                            <Route path="/*" element={<LandingPage/>}/>
+                            <Route path="/events" element={<EventPage/>}/>
+                            <Route path="/events/:eventName" element={<EventDetailsPage/>}/>
+                            <Route path="/team" element={<TeamPage/>}/>
+                            <Route path="/sponsor" element={<SponsorPage/>}/>
+                            <Route path="/developer" element={<DeveloperPage/>}/>
                         </Routes>
                     </AnimatePresence>
                 </ScrollToTop>

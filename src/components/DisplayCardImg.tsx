@@ -22,7 +22,7 @@ export const DisplayCardImg = ({src, title, description}: EventCardProps) => {
                 </div>
                 <div className="w-full flex justify-end">
                     <EventCardButton title="Explore" icon={<GoArrowUpRight className="z-10 stroke-1 group-hover:stroke-black" color="#00FFC6"/>}
-                                     link="/ahouba/events/"/>
+                                     link="/events/"/>
                 </div>
             </div>
         </div>
