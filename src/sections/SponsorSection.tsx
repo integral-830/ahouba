@@ -20,13 +20,13 @@ const SponsorSection = () => {
                                 className="self-center font-semibold whitespace-nowrap dark:text-white customFont text-[5vh] text-center text-[#00FFC6]">IIIT MANIPUR</span>
                         </a>
                         <ul className="flex flex-wrap items-center mb-6 text-2xl font-medium text-[#00ffc6] sm:mb-0 dark:text-gray-400">
-                            <li><a href="#" target="_blank" className="nav-btn me-4 md:me-6">Instagram</a></li>
-                            <li><a href="#" target="_blank" className="nav-btn me-4 md:me-6">Linked In</a></li>
+                            <li><a href="https://www.instagram.com/ahouba_iiitmanipur?igsh=OHpmZ2twYW55OWxr" target="_blank" className="nav-btn me-4 md:me-6">Instagram</a></li>
+                            <li><a href="https://in.linkedin.com/company/ahouba-iiitm" target="_blank" className="nav-btn me-4 md:me-6">Linked In</a></li>
                         </ul>
                     </div>
                     <div className="w-full flex gap-4">
                         <h1 className="text-2xl font-coaster text-[#00ffc6] items-start">Contact Us :</h1>
-                        <h1 className="text-xl text-[#00ffc6] items-start">xyz@iiitmanipur.ac.in</h1>
+                        <h1 className="text-xl text-[#00ffc6] items-start">ayus230102017@iiitmanipur.ac.in</h1>
                     </div>
                     <hr className="my-6 border-[#00ffc6] sm:mx-auto dark:border-gray-700 lg:my-8"/>
                     <span className="block text-lg text-[#00ffc6] sm:text-center dark:text-gray-400">© 2025  <a

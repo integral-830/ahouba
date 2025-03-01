@@ -16,11 +16,6 @@ body {
     display: none;
 }
 
-{
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
 #particles canvas {
     position: absolute;
     top: 0;

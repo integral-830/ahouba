@@ -29,13 +29,13 @@ const members: Array<memberData> = [
         profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/rg.jpg",
         designation: "Cyber security lead"
     },
-    {
-        link: "https://www.linkedin.com/in/anurag-kar-769358326",
-        name: "ANURAG KAR",
-        contact: 8789253304,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ak.jpg",
-        designation: "Co - Lead, Cyber Security Club"
-    },
+    // {
+    //     link: "https://www.linkedin.com/in/anurag-kar-769358326",
+    //     name: "ANURAG KAR",
+    //     contact: 8789253304,
+    //     profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ak.jpg",
+    //     designation: "Co - Lead, Cyber Security Club"
+    // },
     {
         link: "https://www.linkedin.com/in/kushsharma20/",
         name: "Kush Sharma",
@@ -61,7 +61,7 @@ const members: Array<memberData> = [
         link: "https://www.linkedin.com/in/ayush-pandey-0b5a88254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         name: "Ayush Pandey",
         contact: 9336779708,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ap.jpg",
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ap.webp",
         designation: "eSports Lead"
     },
     {
@@ -103,7 +103,7 @@ const members: Array<memberData> = [
         link: "linkedin.com/in/Aryan Singh",
         name: "Aryan Singh",
         contact: 9958667276,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/as.jpg",
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ars.jpg",
         designation: "Event Management"
     },
     {
@@ -138,7 +138,7 @@ const members: Array<memberData> = [
         link: "https://www.linkedin.com/in/om-bharadwaj-916b802a5/",
         name: "Om Bharadwaj",
         contact: 6207803739,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ob.jpg-",
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ob.jpg",
         designation: "Co Lead Sponsorship Team"
     },
     {

@@ -94,7 +94,7 @@ const SponsorPage = () => {
                                                     <img src={sponsor.image} className="h-[100px] md:h-[150px] aspect-[1/1]"
                                                          alt="stpi"/>
                                                 </SpotlightCard>
-                                                <h1 className="font-coaster text-5xl text-[#00FFc6]">{sponsor.description}</h1>
+                                                <h1 className="font-coaster text-5xl text-white">{sponsor.description}</h1>
                                             </div>
                                         )
                                     }
