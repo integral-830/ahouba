@@ -4,7 +4,7 @@ const TypeWriter = () => {
     return (
         <div className='w-fit '>
             <h1 className="customFont uppercase font-zentry text-[#00FFC6] text-4xl md:text-7xl lg:text-[9rem]">
-                <span style={{color: '#00FFC6', fontWeight: 'bold'}}>
+                <span style={{color: '#fff', fontWeight: 'bold'}}>
                     <Typewriter
                         words={['2.0']}
                         loop={0}

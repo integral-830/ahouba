@@ -17,8 +17,14 @@ interface EventDetails {
     "ruleBook":string
 }
 
+interface Image{
+    image: string;
+    text: string;
+}
+
 interface EventResponse{
     events: Array<EventDetails>;
+    gallery: Array<Image>
 }
 
 const client = axios.create({

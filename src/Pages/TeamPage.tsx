@@ -3,8 +3,9 @@ import {useGSAP} from "@gsap/react";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import ProfileCard from "../components/ProfileCard.tsx";
-import ParticlesComponent from "../utility/Particle.tsx";
+import Particles from "../utility/Particles.tsx";
 import Transition from "../utility/Transition.tsx";
+import GradientText from "../components/GradientText.tsx";
 
 interface memberData {
     name: string;
@@ -203,12 +204,37 @@ const TeamPage = () => {
 
     return (
         <section ref={teamSection} className=" relative min-h-lvh w-screen overflow-hidden">
-            <ParticlesComponent id="particles" />
+            <Particles
+                particleColors={['#ffffff', '#7000df','#d9b3ff','#5a00b3']}
+                particleCount={500}
+                particleSpread={10}
+                speed={0.1}
+                particleBaseSize={100}
+                moveParticlesOnHover={true}
+                alphaParticles={false}
+                disableRotation={false}
+            />
             <div ref={teamHeader}
                  className="relative z-30 w-[1250vw] md:w-[750vw] lg:w-[400vw] h-full flex flex-col will-change-transform ">
                 <div className="absolute w-full h-full flex flex-col items-center p-36">
-                    <h1 className="customFont text-[22vh] text-[#00Ff88] w-full">Tech--Team</h1>
-                    <h1 className="customFont text-[28vh] text-[#00FF88] w-full h-full text-center">Bit-Busters</h1>
+                    <GradientText
+                        id="hero-title"
+                        colors={["#172033", "#fff", "#172033", "#fff", "#172033"]}
+                        animationSpeed={3}
+                        showBorder={false}
+                        className="customFont text-[22vh] text-[#DFDFF2] w-full"
+                    >
+                        Tech--Team
+                    </GradientText>
+                    <GradientText
+                        id="hero-title"
+                        colors={["#172033", "#fff", "#172033", "#fff", "#172033"]}
+                        animationSpeed={3}
+                        showBorder={false}
+                        className="customFont text-[22vh] text-[#DFDFF2] justify-center"
+                    >
+                        Bit-Busters
+                    </GradientText>
                 </div>
                 <div className="absolute w-full h-full flex flex-col will-change-transform">
                     <div className="h-full w-full flex items-center justify-around">
@@ -254,7 +280,15 @@ const TeamPage = () => {
                         )
                         }
                         <div className="w-fit">
-                            <h1 className="customFont text-[8vh] text-[#00FF88]">/your-helping-hands</h1>
+                            <GradientText
+                                id="hero-title"
+                                colors={["#172033", "#fff", "#172033", "#fff", "#172033"]}
+                                animationSpeed={3}
+                                showBorder={false}
+                                className="customFont text-[8vh] text-[#DFDFF2] justify-center"
+                            >
+                                /your-helping-hands
+                            </GradientText>
                         </div>
                     </div>
                 </div>

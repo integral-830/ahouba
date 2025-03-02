@@ -4,6 +4,7 @@ import {useWindowScroll} from "react-use";
 import gsap from "gsap";
 import {IoCloseSharp, IoMenu} from "react-icons/io5";
 import {useNavigate} from "react-router";
+import GradientText from "./GradientText.tsx";
 
 
 interface MenuItem {
@@ -74,14 +75,14 @@ function Navbar() {
         <div ref={navRef}
              className="fixed top-0 left-0 z-30 w-full flex items-center justify-between align-middle px-7 lg:px-32">
             <div className="w-full flex items-center justify-between">
-                <img onClick={()=>{ navigate("/ahouba/")} } className="h-[60px] w-[60px] hover:scale-125 transition-all ease-in duration-300" src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ahoubaLogo.svg"
+                <img onClick={()=>{ navigate("/ahouba/")} } className="h-[60px] w-[60px] hover:scale-125 transition-all ease-in duration-300" src="/public/ahoubaLogo.svg"
                      alt="icon"/>
                 <div className="h-[35px] w-[40px] relative mx-3 md:hidden">
                     {!isOpen ?
                         <IoMenu onClick={() => setIsOpen((open) => !open)}
-                                className="stroke-[#00FFC6] h-full w-full"/> :
+                                className="stroke-[#7000df] h-full w-full"/> :
                         <IoCloseSharp onClick={() => setIsOpen((open) => !open)}
-                                      className="fill-[#00FFC6] h-full w-full"/>
+                                      className="fill-[#7000df] h-full w-full"/>
                     }
                 </div>
             </div>
@@ -90,9 +91,9 @@ function Navbar() {
                     {
                         menuItems.map(((menuItem, index) => (
                             <Link to={menuItem.link} key={index} onClick={() => setIsOpen((open) => !open)}
-                                  className="group relative overflow-hidden px-8 py-3 text-3xl active:bg-[#00FFC6] rounded-full after:absolute after:w-full after:h-full after:bg-[#00FFC6] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:transition-all hover:after:ease-out hover:after:duration-200">
+                                  className="group relative overflow-hidden px-8 py-3 text-3xl active:bg-[#fff] rounded-full after:absolute after:w-full after:h-full after:bg-[#8080cb] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:transition-all hover:after:ease-out hover:after:duration-200 ">
                                 <div
-                                    className="w-fit h-full no-underline relative z-10 text-[#00FFC6] group-hover:text-[#A8A8D7] group-hover:no-underline group-hover:cursor-pointer">
+                                    className="w-fit h-full no-underline relative z-10 text-[#ffff] group-hover:text-[#A8A8D7] group-hover:no-underline group-hover:cursor-pointer">
                                     {menuItem.title}
                                 </div>
                             </Link>
@@ -105,11 +106,15 @@ function Navbar() {
 
                     menuItems.map(((menuItem, index) => (
                         <Link to={menuItem.link} key={index}
-                              className="group relative overflow-hidden px-8 py-3 rounded-full border-[#00FFC6] border-2 text-3xl after:absolute after:w-full after:h-full after:bg-[#00FFC6] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:rounded hover:after:transition-all hover:after:ease-out hover:after:duration-200">
-                            <div
-                                className="w-full h-full no-underline relative z-10 text-[#00FFC6] group-hover:text-black group-hover:no-underline group-hover:cursor-pointer">
+                              className="group relative overflow-hidden px-8 py-3 rounded-full border-2 text-3xl after:absolute after:w-full after:h-full after:bg-[#8080cb] after:left-0 after:-bottom-full after:rounded-full hover:after:bottom-0 hover:after:rounded hover:after:transition-all hover:after:ease-out hover:after:duration-200 [background:linear-gradient(45deg,#172033,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] border-transparent animate-border">
+                            <GradientText
+                                colors={["#172033", "#fff", "#fff", "#fff", "#172033"]}
+                                animationSpeed={3}
+                                showBorder={false}
+                                className="w-full h-full no-underline relative z-10 text-[#fff] group-hover:text-black group-hover:no-underline group-hover:cursor-pointer"
+                            >
                                 {menuItem.title}
-                            </div>
+                            </GradientText>
                         </Link>
                     )))
                 )}

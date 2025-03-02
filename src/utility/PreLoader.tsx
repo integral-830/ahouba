@@ -1,7 +1,7 @@
-import Waves from "../components/Waves.tsx";
 import {useEffect, useState} from "react";
 import CountUp from "../components/CountUp.tsx";
 import typo from "../assets/images/typo.svg";
+import Particles from "./Particles.tsx";
 
 const PreLoader = () => {
 
@@ -27,18 +27,15 @@ const PreLoader = () => {
     return (
         <section className="w-screen h-lvh relative">
             <div className="absolute z-0 top-0 left-0 w-full h-full">
-                <Waves
-                    lineColor="#00b38b"
-                    backgroundColor="rgba(0, 77, 59,1)"
-                    waveSpeedX={0.02}
-                    waveSpeedY={0.01}
-                    waveAmpX={40}
-                    waveAmpY={20}
-                    friction={0.9}
-                    tension={0.01}
-                    maxCursorMove={120}
-                    xGap={12}
-                    yGap={36}
+                <Particles
+                    particleColors={['#ffffff', '#7000df']}
+                    particleCount={500}
+                    particleSpread={10}
+                    speed={0.1}
+                    particleBaseSize={100}
+                    moveParticlesOnHover={true}
+                    alphaParticles={false}
+                    disableRotation={false}
                 />
             </div>
             <div className="absolute z-10 top-0 left-0 w-full h-full">
@@ -54,7 +51,7 @@ const PreLoader = () => {
                             separator=","
                             direction="up"
                             duration={0.1}
-                            className="count-up-text customFont uppercase font-zentry text-[#00FFC6] text-[15vh] lg:text-[20vh]"
+                            className="count-up-text customFont uppercase font-zentry text-[#DFDFF2] text-[15vh] lg:text-[20vh]"
                         />
                     </div>
                 </div>

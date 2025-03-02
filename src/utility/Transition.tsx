@@ -11,7 +11,7 @@ const Transition = (Children: any) => {
                         exit={{scaleY: 1}}
                         transition={{duration: 1.5, ease: [0.22, 1, 0.36, 1]}}
             >
-                <div className="w-full h-full flex flex-col flex-center bg-[#008063]">
+                <div className="w-full h-full flex flex-col flex-center bg-[#7000df]">
                     <img className="h-[250px] w-[250px] md:w-[350px] md:h-[350px] hover:scale-105"
                          src={typo} alt="icon"/>
                 </div>
@@ -22,7 +22,7 @@ const Transition = (Children: any) => {
                         exit={{scaleY: 0}}
                         transition={{duration: 1.5, ease: [0.22, 1, 0.36, 1]}}
             >
-                <div className="w-full h-full flex flex-col flex-center bg-[#008063]">
+                <div className="w-full h-full flex flex-col flex-center bg-[#7000df]">
                     <img className="h-[250px] w-[250px] md:w-[350px] md:h-[350px]  hover:scale-105"
                          src={typo} alt="icon"/>
                 </div>

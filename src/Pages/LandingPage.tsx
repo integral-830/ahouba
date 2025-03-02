@@ -1,5 +1,4 @@
 import HeroSection from "../sections/HeroSection.tsx";
-import AboutSection from "../sections/AboutSection.tsx";
 import DisplaySection from "../sections/DisplaySection.tsx";
 import Gallery from "../sections/Gallery.tsx";
 import SponsorSection from "../sections/SponsorSection.tsx";
@@ -8,6 +7,7 @@ import Lenis from "lenis";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import Transition from "../utility/Transition.tsx";
+import Particles from "../utility/Particles.tsx";
 
 const LandingPage = () => {
 
@@ -31,9 +31,18 @@ const LandingPage = () => {
 
     return (
         <section ref={containerRef} className="App w-screen min-h-lvh relative">
+            <Particles
+                particleColors={['#ffffff', '#7000df','#d9b3ff','#5a00b3']}
+                particleCount={500}
+                particleSpread={10}
+                speed={0.1}
+                particleBaseSize={100}
+                moveParticlesOnHover={true}
+                alphaParticles={false}
+                disableRotation={false}
+            />
             <div className="absolute">
                 <HeroSection/>
-                <AboutSection/>
                 <DisplaySection/>
                 <Gallery/>
                 <SponsorSection/>

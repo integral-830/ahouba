@@ -13,7 +13,7 @@ interface SpotlightCardProps extends React.PropsWithChildren {
 const SpotlightCard: React.FC<SpotlightCardProps> = ({
                                                          children,
                                                          className = "",
-                                                         spotlightColor = "rgba(0, 255, 198, 0.2)"
+                                                         spotlightColor = "rgb(250, 244, 255,0.2)"
                                                      }) => {
     const divRef = useRef<HTMLDivElement>(null);
     const [isFocused, setIsFocused] = useState<boolean>(false);
