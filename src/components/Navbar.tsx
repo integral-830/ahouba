@@ -75,7 +75,7 @@ function Navbar() {
         <div ref={navRef}
              className="fixed top-0 left-0 z-30 w-full flex items-center justify-between align-middle px-7 lg:px-32">
             <div className="w-full flex items-center justify-between">
-                <img onClick={()=>{ navigate("/ahouba/")} } className="h-[60px] w-[60px] hover:scale-125 transition-all ease-in duration-300" src="/public/ahoubaLogo.svg"
+                <img onClick={()=>{ navigate("/ahouba/")} } className="h-[60px] w-[60px] hover:scale-125 transition-all ease-in duration-300" src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ahoubaLogo.svg"
                      alt="icon"/>
                 <div className="h-[35px] w-[40px] relative mx-3 md:hidden">
                     {!isOpen ?
