@@ -7,7 +7,7 @@ const DeveloperPage = () => {
     return (
         <div className=" relative h-lvh w-screen overflow-hidden p-10 pt-36">
             <Particles
-                particleColors={['#ffffff', '#7000df','#d9b3ff','#5a00b3']}
+                particleColors={['#ffffff', '#7000df', '#d9b3ff', '#5a00b3']}
                 particleCount={500}
                 particleSpread={10}
                 speed={0.1}
@@ -46,8 +46,15 @@ const DeveloperPage = () => {
                                         backgroundColor: "#000"
                                     }}
                                 >
-                                    <h1 id="hero-title"
-                                        className="customFont uppercase font-zentry text-[#DFDFF2] text-7xl">Integral</h1>
+                                    <GradientText
+                                        id="hero-title"
+                                        colors={["#172033", "#fff", "#172033", "#fff", "#172033"]}
+                                        animationSpeed={3}
+                                        showBorder={false}
+                                        className="customFont uppercase font-zentry text-[#DFDFF2] text-7xl"
+                                    >
+                                        Integral
+                                    </GradientText>
                                 </div>
                             }
                             gridSize={12}

@@ -13,12 +13,12 @@ const SponsorSection = () => {
             <footer className=" rounded-lg shadow-sm dark:bg-gray-900 m-4">
                 <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                     <div className="sm:flex sm:items-center sm:justify-between">
-                        <a href="https://flowbite.com/"
+                        <div
                            className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                            <img src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ahoubaLogo.svg" className="h-16" alt="Flowbite Logo"/>
+                            <img src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ahoubaLogo.svg" className="h-16" alt="ahouba logo"/>
                             <span
                                 className="self-center font-semibold whitespace-nowrap dark:text-white customFont text-[5vh] text-center text-[#8080cb]">IIIT MANIPUR</span>
-                        </a>
+                        </div>
                         <ul className="flex flex-wrap items-center mb-6 text-2xl font-medium text-[#8080cb] sm:mb-0 dark:text-gray-400">
                             <li><a href="https://www.instagram.com/ahouba_iiitmanipur?igsh=OHpmZ2twYW55OWxr" target="_blank" className="nav-btn me-4 md:me-6">Instagram</a></li>
                             <li><a href="https://in.linkedin.com/company/ahouba-iiitm" target="_blank" className="nav-btn me-4 md:me-6">Linked In</a></li>

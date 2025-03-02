@@ -124,7 +124,7 @@ const PixelTransition: React.FC<PixelTransitionProps> = ({
         text-white
         rounded-full
         border-4
-        border-[#00FFC6]
+        border-[#7000df]
         w-[300px]
         max-w-full
         relative
