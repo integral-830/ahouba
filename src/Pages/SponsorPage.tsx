@@ -16,30 +16,38 @@ interface Sponsor {
 }
 
 const sponsors: Sponsor[] = [
-    // {
-    //     title: "TITLE SPONSORS",
-    //     sponsors: [
-    //         {
-    //             description: "Babina",
-    //             image: babina,
-    //         }
-    //     ]
-    // },
     {
-        title: "ASSOCIATE SPONSORS",
+        title: "TITLE SPONSORS",
         sponsors: [
-            {
-                description: "Babina",
-                image: babina,
-            },
             {
                 description: "DIT",
                 image: dit,
-            },
+            }
+        ]
+    },{
+        title: "CO-TITLE SPONSORS",
+        sponsors: [
             {
                 description: "MPHC",
                 image: mphc,
             }
+        ]
+    },
+    {
+        title: "ASSOCIATE SPONSORS",
+        sponsors: [
+            {
+                description: "BABINA",
+                image: babina,
+            },
+            // {
+            //     description: "DIT",
+            //     image: dit,
+            // },
+            // {
+            //     description: "MPHC",
+            //     image: mphc,
+            // }
         ]
     },
     // {

@@ -31,7 +31,7 @@ const EventDetailsPage = () => {
                 isLoading ? <EventLoading/>
                     : isError ?
                         <SpotlightCard>
-                            <div className="w-full h-lvh flex flex-col flex-center gap-4">
+                            <div className="w-[80vw] h-lvh flex flex-col flex-center gap-4">
                                 <div className="flex gap-8">
                                     <span className="customFont hero-heading -rotate-12">4</span>
                                     <span className="customFont hero-heading">0</span>

@@ -17,11 +17,11 @@ interface memberData {
 
 const members: Array<memberData> = [
     {
-        link: "https://www.linkedin.com/in/shivam-singh-21a8b9258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        name: "Shivam Kumar Singh",
-        contact: 7005627424,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/sks.jpg",
-        designation: "eSports Team"
+        link: "https://www.linkedin.com/in/shivam-kumar-574600144/",
+        name: "Shivam Kumar",
+        contact: 8826314381,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ll.jpg",
+        designation: "E-SPORTS MANAGEMENT HEAD"
     },
     {
         link: "https://www.linkedin.com/in/rahul-gogra-ba4135203",
@@ -30,13 +30,6 @@ const members: Array<memberData> = [
         profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/rg.jpg",
         designation: "Cyber security lead"
     },
-    // {
-    //     link: "https://www.linkedin.com/in/anurag-kar-769358326",
-    //     name: "ANURAG KAR",
-    //     contact: 8789253304,
-    //     profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ak.jpg",
-    //     designation: "Co - Lead, Cyber Security Club"
-    // },
     {
         link: "https://www.linkedin.com/in/kushsharma20/",
         name: "Kush Sharma",
@@ -78,6 +71,13 @@ const members: Array<memberData> = [
         contact: 9351731896,
         profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/gs.jpg",
         designation: "E sports pr team"
+    },
+    {
+        link: "https://www.linkedin.com/in/shivam-singh-21a8b9258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Shivam Kumar Singh",
+        contact: 7005627424,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/sks.jpg",
+        designation: "eSports Team"
     },
     {
         link: "https://www.linkedin.com/in/prabhasavvaru15?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",

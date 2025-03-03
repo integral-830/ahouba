@@ -18,8 +18,8 @@ const Gallery = () => {
                 Into The Past !
             </GradientText>
             {
-                isLoading ? <div
-                        className="flex items-center justify-center w-full lg:w-1/2 xl:w-1/3 h-[300px] md:h-1/3 rounded-3xl bg-gray-300 dark:bg-gray-700">
+                isLoading ?
+                    <div role="status" className="flex animate-pulse items-center justify-center w-full lg:w-1/2 xl:w-1/3 h-[300px] md:h-1/3 rounded-3xl bg-gray-300 dark:bg-gray-700">
                         <svg className="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true"
                              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
                             <path
@@ -28,7 +28,7 @@ const Gallery = () => {
                     </div>
                     : isError ?
                         <SpotlightCard className="[background:linear-gradient(45deg,#172033,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] border-transparent animate-border">
-                            <div className="w-full h-lvh flex flex-col flex-center gap-4">
+                            <div className="w-full h-[50vh] flex flex-col flex-center gap-4">
                                 <div className="flex gap-8">
                                     <span className="customFont hero-heading -rotate-12">4</span>
                                     <span className="customFont hero-heading">0</span>

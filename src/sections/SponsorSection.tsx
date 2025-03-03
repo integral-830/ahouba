@@ -4,7 +4,7 @@ import Sponsors from "../components/Sponsors.tsx";
 const SponsorSection = () => {
 
     return (
-        <section className="sponsorSection w-screen min-h-[200lvh] relative bg-transparent justify-center items-center">
+        <section className="sponsorSection w-screen min-h-fit relative bg-transparent justify-center items-center">
             <div
                 className="w-full h-full relative flex flex-col gap-4 md:px-40 py-12 justify-center items-center bg-[#8080cb]">
                 <SponsorText/>
