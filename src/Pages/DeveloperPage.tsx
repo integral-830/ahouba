@@ -51,14 +51,14 @@ const DeveloperPage = () => {
                                         colors={["#172033", "#fff", "#172033", "#fff", "#172033"]}
                                         animationSpeed={3}
                                         showBorder={false}
-                                        className="customFont uppercase font-zentry text-[#DFDFF2] text-7xl"
+                                        className="customFont uppercase font-zentry text-[#DFDFF2] text-7xl justify-center"
                                     >
                                         Integral
                                     </GradientText>
                                 </div>
                             }
                             gridSize={12}
-                            pixelColor='#00FFC6'
+                            pixelColor='#7000df'
                             animationStepDuration={0.4}
                             className="custom-pixel-card"
                         />

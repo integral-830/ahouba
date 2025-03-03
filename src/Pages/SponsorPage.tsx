@@ -16,25 +16,25 @@ interface Sponsor {
 }
 
 const sponsors: Sponsor[] = [
-    {
-        title: "TITLE SPONSORS",
-        sponsors: [
-            {
-                description: "Babina",
-                image: babina,
-            }
-        ]
-    },
+    // {
+    //     title: "TITLE SPONSORS",
+    //     sponsors: [
+    //         {
+    //             description: "Babina",
+    //             image: babina,
+    //         }
+    //     ]
+    // },
     {
         title: "ASSOCIATE SPONSORS",
         sponsors: [
             {
-                description: "DIT",
-                image: dit,
+                description: "Babina",
+                image: babina,
             },
             {
-                description: "HANDI",
-                image: handi,
+                description: "DIT",
+                image: dit,
             },
             {
                 description: "MPHC",
@@ -51,24 +51,24 @@ const sponsors: Sponsor[] = [
     //         }
     //     ]
     // },
-    // {
-    //     title: "FOOD PARTNERS",
-    //     sponsors: [
-    //         {
-    //             description: "A CUBE",
-    //             image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/A3.svg",
-    //         },
-    //         {
-    //             description: "LIKLA",
-    //             image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/likla.svg",
-    //         }
-    //         ,
-    //         {
-    //             description: "TAMANNA",
-    //             image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/tamanna.svg",
-    //         }
-    //     ]
-    // },
+    {
+        title: "FOOD PARTNERS",
+        sponsors: [
+            {
+                description: "HANDI",
+                image: handi,
+            },
+            // {
+            //     description: "LIKLA",
+            //     image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/likla.svg",
+            // }
+            // ,
+            // {
+            //     description: "TAMANNA",
+            //     image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/tamanna.svg",
+            // }
+        ]
+    },
     // {
     //     title: "MEDIA SPONSORS",
     //     sponsors: [
