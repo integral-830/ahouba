@@ -15,7 +15,6 @@ const Highlights = () => {
 
     const {data: Response, isLoading, isError} = useFetchEventDetails();
     const imagesData = Response?.swipper
-    console.log(imagesData)
 
     return (
         <div className="w-screen h-lvh lg:p-40">
