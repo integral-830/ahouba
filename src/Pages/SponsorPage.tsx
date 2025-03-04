@@ -18,6 +18,10 @@ const sponsors: Sponsor[] = [
             {
                 description: "DIT",
                 image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/sponsors/DepIT.svg",
+            },
+                {
+                description: "MSITS",
+                image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/sponsors/MSITS.svg",
             }
         ]
     },{

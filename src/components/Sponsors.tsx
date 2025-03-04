@@ -28,18 +28,25 @@ const Sponsors = () => {
             </div>
             <div id="spContainer" className=" w-full flex flex-col p-4 gap-4 items-center">
                 <h1 className="text-5xl md:text-7xl font-coaster text-black items-start">TITLE SPONSORS</h1>
-                <SpotlightCard className="[background:linear-gradient(45deg,#172033,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] border-transparent animate-border">
-                <img src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/sponsors/DepIT.svg"
-                     className="h-[80px] md:h-[120px] aspect-[1/1]" alt="dit"/>
+                <SpotlightCard
+                    className="[background:linear-gradient(45deg,#172033,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] border-transparent animate-border">
+                    <img src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/sponsors/DepIT.svg"
+                         className="h-[80px] md:h-[120px] aspect-[1/1]" alt="dit"/>
+                </SpotlightCard>
+                <SpotlightCard
+                    className="[background:linear-gradient(45deg,#172033,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] border-transparent animate-border">
+                    <img src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/sponsors/MSITS.svg"
+                         className="h-[80px] md:h-[120px] aspect-[1/1]" alt="msit"/>
                 </SpotlightCard>
             </div>
             <div className="h-full w-full flex flex-col lg:flex-row justify-around items-center relative m-10">
                 <div className="h-full w-full flex justify-around items-center relative">
                     <div id="spContainer" className="flex flex-col items-center gap-4">
                         <h1 className="text-5xl md:text-7xl font-coaster text-black items-start">CO-TITLE SPONSORS</h1>
-                        <SpotlightCard className="[background:linear-gradient(45deg,#172033,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] border-transparent animate-border">
-                        <img src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/sponsors/mphc.svg"
-                             className="h-[80px] md:h-[120px] aspect-[1/1]" alt="mhpc"/>
+                        <SpotlightCard
+                            className="[background:linear-gradient(45deg,#172033,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] border-transparent animate-border">
+                            <img src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/sponsors/mphc.svg"
+                                 className="h-[80px] md:h-[120px] aspect-[1/1]" alt="mhpc"/>
                         </SpotlightCard>
                     </div>
                 </div>
@@ -52,8 +59,10 @@ const Sponsors = () => {
                                  className="h-[120px] aspect-[1/1]" alt="babina"/>
 
                         </SpotlightCard>
-                        <SpotlightCard className="[background:linear-gradient(45deg,#172033,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] border-transparent animate-border">
-                        <img src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/sponsors/canara.svg" className="h-[80px] md:h-[120px] aspect-[1/1]" alt="canara"/>
+                        <SpotlightCard
+                            className="[background:linear-gradient(45deg,#172033,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] border-transparent animate-border">
+                            <img src="https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/sponsors/canara.svg"
+                                 className="h-[80px] md:h-[120px] aspect-[1/1]" alt="canara"/>
 
                         </SpotlightCard>
                     </div>
