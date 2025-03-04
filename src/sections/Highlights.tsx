@@ -15,6 +15,7 @@ const Highlights = () => {
 
     const {data: Response, isLoading, isError} = useFetchEventDetails();
     const imagesData = Response?.swipper
+    console.log(imagesData)
 
     return (
         <div className="w-screen h-lvh lg:p-40">
@@ -59,7 +60,7 @@ const Highlights = () => {
                                 centeredSlides={true}
                                 spaceBetween={30}
                                 autoplay={{
-                                    delay: 5500,
+                                    delay: 3500,
                                     disableOnInteraction: false,
                                 }}
                                 pagination={{
@@ -70,12 +71,11 @@ const Highlights = () => {
                                 className="mySwiper w-full h-full "
                             >
                                 {imagesData?.map((image, index) => {
-                                        if (index % 2 === 0) {
                                             return (
                                                 <SwiperSlide key={index}>
                                                     <div className="w-full h-full flex flex-center">
                                                         <TiltedCard
-                                                            className="w-[300px] h-[300px] md:w-[500px] md:h-[350px] lg:w-[60vw] lg:h-[70vh]"
+                                                            className="w-[240px] h-[300px] md:w-[400px] md:h-[500px] lg:w-[480px] lg:h-[600px]"
                                                             imageSrc={image.image}
                                                             altText={image.text}
                                                             captionText={image.text}
@@ -93,7 +93,6 @@ const Highlights = () => {
                                                     </div>
                                                 </SwiperSlide>
                                             )
-                                        }
                                     }
                                 )}
 

@@ -18,7 +18,7 @@ const events: Array<event> = [
     {
         id: 0,
         title: "Tech Art",
-        image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/eventImages/esports.png",
+        image: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/eventImages/ta.png",
         description: "Blend innovation with artistry in Tech Art! Create stunning digital designs, AI-powered visuals, and futuristic masterpieces that push the boundaries of creativity. 🚀",
         date: "07/03/25",
         time: "13:00 pm",
