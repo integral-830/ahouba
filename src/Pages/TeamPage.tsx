@@ -17,13 +17,6 @@ interface memberData {
 
 const members: Array<memberData> = [
     {
-        link: "https://www.linkedin.com/in/shashwat0903?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        name: "Shashwat Kumar",
-        contact: 9708912332,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/swt.jpg",
-        designation: "Techinal Secretary"
-    },
-    {
         link: "",
         name: "Ayush Verma",
         contact: 9142781644,
@@ -31,11 +24,18 @@ const members: Array<memberData> = [
         designation: "Website Lead"
     },
     {
+        link: "https://www.linkedin.com/in/shashwat0903?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Shashwat Kumar",
+        contact: 9708912332,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/swt.jpg",
+        designation: "Techinal Secretary"
+    },
+    {
         link: "https://www.linkedin.com/in/madhav-thakur-7019b3202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         name: "Madhav",
         contact: 9625500445,
         profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/mdh.JPG",
-        designation: "Website Guide"
+        designation: "Website Mentor"
     },
     {
         link: "https://www.linkedin.com/in/shivam-kumar-574600144/",
@@ -43,6 +43,13 @@ const members: Array<memberData> = [
         contact: 8826314381,
         profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ll.jpg",
         designation: "E-SPORTS MANAGEMENT HEAD"
+    },
+    {
+        link: "https://www.linkedin.com/in/abhijit-kumar-8b8356310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "ABHIJIT KUMAR",
+        contact: 9835005042,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/abhi.jpg",
+        designation: "Sponsorship Co-lead"
     },
     {
         link: "https://www.linkedin.com/in/rahulsharma2k4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
