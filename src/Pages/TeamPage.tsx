@@ -17,7 +17,7 @@ interface memberData {
 
 const members: Array<memberData> = [
     {
-        link: "https://www.linkedin.com/in/shivam-kumar-574600144/",
+        link: "https://www.linkedin.com/in/shashwat0903?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         name: "Shashwat Kumar",
         contact: 9708912332,
         profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/swt.jpg",
