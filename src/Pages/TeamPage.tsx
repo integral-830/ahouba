@@ -22,13 +22,15 @@ const members: Array<memberData> = [
         contact: 9708912332,
         profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/swt.jpg",
         designation: "Techinal Secretary"
-    },{
+    },
+    {
         link: "",
         name: "Ayush Verma",
         contact: 9142781644,
         profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/integral.png",
         designation: "Website Lead"
-    },{
+    },
+    {
         link: "https://www.linkedin.com/in/madhav-thakur-7019b3202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         name: "Madhav",
         contact: 9625500445,
@@ -48,6 +50,13 @@ const members: Array<memberData> = [
         contact: 7976608292,
         profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/rs.jpg",
         designation: "Design Team"
+    },
+    {
+        link: "https://www.linkedin.com/in/apoorva-singh-214882323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Apoorva singh",
+        contact: 9897537655,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/aps.jpg",
+        designation: "PR team member"
     },
     {
         link: "https://www.linkedin.com/in/dnyandeep-chute/",
@@ -71,11 +80,25 @@ const members: Array<memberData> = [
         designation: "Design Team"
     },
     {
+        link: "https://www.linkedin.com/in/ayush-pandey-0b5a88254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Ayush Pandey",
+        contact: 9336779708,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ap.webp",
+        designation: "Esports Lead"
+    },
+    {
         link: "https://www.linkedin.com/in/arya-sharma-64b468302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         name: "Arya Sharma",
         contact: 9588211314,
         profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/as.jpeg",
         designation: "PR Lead"
+    },
+    {
+        link: "https://www.linkedin.com/in/yogita-kumari-090277297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Yogita kumari",
+        contact: 7584041059,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/yk.jpg",
+        designation: "Design team"
     },
     {
         link: "https://www.linkedin.com/in/aman-dagar-9993b0205?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -113,11 +136,11 @@ const members: Array<memberData> = [
         designation: "Sponsors Coordinator"
     },
     {
-        link: "https://www.linkedin.com/in/apoorva-singh-214882323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        name: "Apoorva singh",
-        contact: 9897537655,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/aps.jpg",
-        designation: "PR team member"
+        link: "https://www.linkedin.com/in/mansi-dubey-0b3739271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Mansi Dubey",
+        contact: 9644134765,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/md.jpg",
+        designation: "PR Team Member"
     },
     {
         link: "https://www.linkedin.com/in/madhav-kumar-1440a3250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -146,13 +169,6 @@ const members: Array<memberData> = [
         contact: 9628492644,
         profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/hm.jpg",
         designation: "Design Team"
-    },
-    {
-        link: "https://www.linkedin.com/in/yogita-kumari-090277297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        name: "Yogita kumari",
-        contact: 7584041059,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/yk.jpg",
-        designation: "Design team"
     },
     {
         link: "https://www.linkedin.com/in/aishwary-raj-63b434290",

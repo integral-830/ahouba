@@ -8,7 +8,7 @@ import GradientText from "../components/GradientText.tsx";
 gsap.registerPlugin(ScrollTrigger);
 
 const DisplaySection = () => {
-    const backgroungRef = useRef(null);
+    const backgroundRef = useRef(null);
     const gridRef = useRef(null);
     useGSAP(() => {
         gsap.to(gridRef.current, {
@@ -23,7 +23,7 @@ const DisplaySection = () => {
         })
     })
     return (
-        <section ref={backgroungRef} className="w-screen min-h-lvh flex mt-20 justify-center relative bg-transparent">
+        <section ref={backgroundRef} className="w-screen min-h-lvh flex mt-20 justify-center relative bg-transparent">
             <div ref={gridRef}
                  className="flex w-4/5 h-full relative flex-col items-center justify-center px-10 py-12 md:px-40">
                 <GradientText
