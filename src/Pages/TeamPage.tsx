@@ -18,31 +18,43 @@ interface memberData {
 const members: Array<memberData> = [
     {
         link: "https://www.linkedin.com/in/shivam-kumar-574600144/",
+        name: "Shashwat Kumar",
+        contact: 9708912332,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/swt.jpg",
+        designation: "Techinal Secretary"
+    },{
+        link: "",
+        name: "Ayush Verma",
+        contact: 9142781644,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/integral.png",
+        designation: "Website Lead"
+    },{
+        link: "https://www.linkedin.com/in/madhav-thakur-7019b3202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Madhav",
+        contact: 9625500445,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/mdh.JPG",
+        designation: "Website Guide"
+    },
+    {
+        link: "https://www.linkedin.com/in/shivam-kumar-574600144/",
         name: "Shivam Kumar",
         contact: 8826314381,
         profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ll.jpg",
         designation: "E-SPORTS MANAGEMENT HEAD"
     },
     {
-        link: "https://www.linkedin.com/in/rahul-gogra-ba4135203",
-        name: "Rahul Gogra",
+        link: "https://www.linkedin.com/in/rahulsharma2k4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Rahul Sharma",
         contact: 7976608292,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/rg.jpg",
-        designation: "Cyber security lead"
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/rs.jpg",
+        designation: "Design Team"
     },
     {
-        link: "https://www.linkedin.com/in/kushsharma20/",
-        name: "Kush Sharma",
-        contact: 9837635386,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ks.jpeg",
-        designation: "Management head"
-    },
-    {
-        link: "https://www.linkedin.com/in/aknoru",
-        name: "Rounak Prajapati",
-        contact: 9755618709,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/rp.jpg",
-        designation: "Designer and event coordinator , outreach handler"
+        link: "https://www.linkedin.com/in/dnyandeep-chute/",
+        name: "Dnyandeep Anil Chute",
+        contact: 8623959964,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/dac.jpg",
+        designation: "Sponsorship Lead"
     },
     {
         link: "https://www.linkedin.com/in/yash-goswami-6a21a1331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -52,32 +64,32 @@ const members: Array<memberData> = [
         designation: "Design Team Lead"
     },
     {
-        link: "https://www.linkedin.com/in/ayush-pandey-0b5a88254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        name: "Ayush Pandey",
-        contact: 9336779708,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ap.webp",
-        designation: "eSports Lead"
+        link: "https://www.linkedin.com/in/trishansh-verma-b22a09291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Trishansh Verma",
+        contact: 9329750160,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/tv.jpg",
+        designation: "Design Team"
     },
     {
         link: "https://www.linkedin.com/in/arya-sharma-64b468302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         name: "Arya Sharma",
         contact: 9588211314,
         profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/as.jpeg",
-        designation: "PR team"
+        designation: "PR Lead"
     },
     {
-        link: "https://www.linkedin.com/in/gautam-sharma-3b70b62a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        name: "Gautam Sharma",
-        contact: 9351731896,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/gs.jpg",
-        designation: "E sports pr team"
+        link: "https://www.linkedin.com/in/aman-dagar-9993b0205?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        name: "Aman Dagar",
+        contact: 7838690018,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ad.jpeg",
+        designation: "PR Coordinator"
     },
     {
         link: "https://www.linkedin.com/in/shivam-singh-21a8b9258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         name: "Shivam Kumar Singh",
         contact: 7005627424,
         profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/sks.jpg",
-        designation: "eSports Team"
+        designation: "eSports Coordinator "
     },
     {
         link: "https://www.linkedin.com/in/prabhasavvaru15?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -94,25 +106,11 @@ const members: Array<memberData> = [
         designation: "Coordinator and Content Team Member"
     },
     {
-        link: "https://www.linkedin.com/in/ayush-ravi-0b1249257",
-        name: "Ayush Ravi",
-        contact: 7666539163,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ar.jpg",
-        designation: "Event Manager (Club Co-lead)"
-    },
-    {
-        link: "linkedin.com/in/Aryan Singh",
-        name: "Aryan Singh",
-        contact: 9958667276,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ars.jpg",
-        designation: "Event Management"
-    },
-    {
-        link: "www.linkedin.com/in/pabitra-biswas-8b3978257",
-        name: "PABITRA BISWAS",
-        contact: 9932335056,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/pb.jpg",
-        designation: "Event Manager"
+        link: "https://www.linkedin.com/in/anjeet-kumar-a23aab325",
+        name: "Anjeet Kumar",
+        contact: 6299239203,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/anj.jpg",
+        designation: "Sponsors Coordinator"
     },
     {
         link: "https://www.linkedin.com/in/apoorva-singh-214882323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -126,14 +124,7 @@ const members: Array<memberData> = [
         name: "B.Madhav Kumar",
         contact: 9392618213,
         profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/mk.jpg",
-        designation: "Pr team lead"
-    },
-    {
-        link: "https://www.linkedin.com/in/sambodh-gupta-2aa946284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        name: "Sambodh gupta",
-        contact: 9462580504,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/sg.jpg",
-        designation: "Sponsorship Team"
+        designation: "Pr Lead"
     },
     {
         link: "https://www.linkedin.com/in/om-bharadwaj-916b802a5/",
@@ -164,12 +155,19 @@ const members: Array<memberData> = [
         designation: "Design team"
     },
     {
-        link: "www.linkedin.com/in/rahulsharma2k4",
-        name: "Rahul Sharma",
-        contact: 6396165371,
-        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/rs.jpg",
+        link: "https://www.linkedin.com/in/aishwary-raj-63b434290",
+        name: "Aishwary Raj",
+        contact: 9984641146,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/ash.jpg",
         designation: "Design team"
-    }
+    },
+    {
+        link: "https://www.linkedin.com/in/aman-chahar-9466bb325?",
+        name: "Aman chahar",
+        contact: 6396165371,
+        profile: "https://pub-c94b02dd33c14b448990be89eff7f07f.r2.dev/amc.jpg",
+        designation: "PR team"
+    },
 ];
 
 gsap.registerPlugin(ScrollTrigger)
