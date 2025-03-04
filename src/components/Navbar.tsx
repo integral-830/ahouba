@@ -68,7 +68,6 @@ function Navbar() {
         {title: "Events", link: "/events"},
         {title: "Sponsor", link: "/sponsor"},
         {title: "Team", link: "/team"},
-        {title: "Developer", link: "/developer"},
     ]
 
     return (

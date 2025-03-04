@@ -1,5 +1,6 @@
 import SponsorText from "../components/SponsorText.tsx";
 import Sponsors from "../components/Sponsors.tsx";
+import {Link} from "react-router-dom";
 
 const SponsorSection = () => {
 
@@ -22,11 +23,8 @@ const SponsorSection = () => {
                         <ul className="flex flex-wrap items-center mb-6 text-2xl font-medium text-[#8080cb] sm:mb-0 dark:text-gray-400">
                             <li><a href="https://www.instagram.com/ahouba_iiitmanipur?igsh=OHpmZ2twYW55OWxr" target="_blank" className="nav-btn me-4 md:me-6">Instagram</a></li>
                             <li><a href="https://in.linkedin.com/company/ahouba-iiitm" target="_blank" className="nav-btn me-4 md:me-6">Linked In</a></li>
+                            <li><Link to="/developer" className="nav-btn me-4 md:me-6">Developer</Link></li>
                         </ul>
-                    </div>
-                    <div className="w-full flex gap-4">
-                        <h1 className="text-2xl font-coaster text-[#8080cb] items-start">Contact Us :</h1>
-                        <h1 className="text-xl text-[#8080cb] items-start">ayus230102017@iiitmanipur.ac.in</h1>
                     </div>
                     <hr className="my-6 border-[#8080cb] sm:mx-auto dark:border-gray-700 lg:my-8"/>
                     <span className="block text-lg text-[#8080cb] sm:text-center dark:text-gray-400">© 2025  <a

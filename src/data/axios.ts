@@ -25,6 +25,7 @@ interface Image{
 interface EventResponse{
     events: Array<EventDetails>;
     gallery: Array<Image>
+    swipper: Array<Image>
 }
 
 const client = axios.create({

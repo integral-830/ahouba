@@ -8,6 +8,7 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import Transition from "../utility/Transition.tsx";
 import Particles from "../utility/Particles.tsx";
+import Highlights from "../sections/Highlights.tsx";
 
 const LandingPage = () => {
 
@@ -44,6 +45,7 @@ const LandingPage = () => {
             <div className="absolute">
                 <HeroSection/>
                 <DisplaySection/>
+                <Highlights/>
                 <Gallery/>
                 <SponsorSection/>
             </div>
