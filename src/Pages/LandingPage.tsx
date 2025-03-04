@@ -1,6 +1,5 @@
 import HeroSection from "../sections/HeroSection.tsx";
 import DisplaySection from "../sections/DisplaySection.tsx";
-import Gallery from "../sections/Gallery.tsx";
 import SponsorSection from "../sections/SponsorSection.tsx";
 import {useEffect, useRef} from "react";
 import Lenis from "lenis";
@@ -46,7 +45,7 @@ const LandingPage = () => {
                 <HeroSection/>
                 <DisplaySection/>
                 <Highlights/>
-                <Gallery/>
+                {/*<Gallery/>*/}
                 <SponsorSection/>
             </div>
         </section>
