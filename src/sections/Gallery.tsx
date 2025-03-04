@@ -44,7 +44,7 @@ const Gallery = () => {
                             </div>
                         </SpotlightCard>
                         : (
-                            <CircularGallery bend={0} textColor="#ffffff" borderRadius={0.05} items={images}/>
+                            <CircularGallery bend={1} textColor="#ffffff" borderRadius={0.05} items={images}/>
                         )
             }
         </section>
